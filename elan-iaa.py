@@ -41,7 +41,7 @@ def getnonindeptier(name,tiername,type='child',parentdict={}):
                 tr_time_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF1']
                 tr_ann_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['ANNOTATION_ID']
 
-                udict[tr_time_ref][name][tr_ann_ref]=trtext
+                udict[tr_time_ref][name]=trtext
                 udict[tr_ann_ref]=tr_time_ref
 
         ## make YAML multidimensional dict dic[tr_time_ref][tr_ann_ref]
@@ -55,7 +55,7 @@ def getnonindeptier(name,tiername,type='child',parentdict={}):
                 exp_time_ref = tr_dict[exp.find('REF_ANNOTATION').attrib['ANNOTATION_REF']]
                 exp_ann_ref = exp.find('REF_ANNOTATION').attrib['ANNOTATION_ID']
 
-                udict[exp_time_ref][name][exp_ann_ref]=exptext
+                udict[exp_time_ref][name]=exptext
                 udict[exp_ann_ref]=exp_time_ref
 
         return udict
@@ -76,7 +76,7 @@ def create_ann_dict(ann_tree):
     for ts in time.getiterator('TIME_SLOT'):
        times[int(ts.attrib['TIME_VALUE'])] = ts.attrib['TIME_SLOT_ID']
 ##
- #   nesteddict.merge(times, dict((times[k], k) for k in times) ) #create bidirectional mapping in same dict
+    nesteddict.merge(times, dict((times[k], [k]) for k in times) ) #create bidirectional mapping in same dict
 ##
 ##
 ##    return [times,trtext]
@@ -244,7 +244,10 @@ import json
 json.dump(anndict,outfile,indent=4)
 
 exit()
-import pyaml
+import yaml
+
+
+
 anndata1= pyaml.dump(create_ann_dict(ann_tree1)[1])
 anndata2=pyaml.dump(create_ann_dict(ann_tree2)[1])
 

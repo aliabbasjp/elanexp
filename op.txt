@@ -688,3206 +688,4579 @@
     "2368200": "ts838", 
     "2369600": "ts839", 
     "2370140": "ts840", 
-    "ts1": {
-        "transcript": {
-            "a937": "Music"
+    "ts192": [
+        585540, 
+        {
+            "transcript": "What we do here is - you maintain the temperature of the plant."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining  Temperature"
         }
-    }, 
+    ], 
+    "ts190": [
+        584360
+    ], 
+    "ts196": [
+        597800
+    ], 
+    "ts197": [
+        598840, 
+        {
+            "transcript": "with a heater or cooling with a fan."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining  Temperature"
+        }
+    ], 
+    "ts194": [
+        589820
+    ], 
+    "ts195": [
+        591520, 
+        {
+            "transcript": "The plant is a small blade. We try to maintain it's temperature by heating"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining  Temperature"
+        }
+    ], 
+    "ts198": [
+        600420
+    ], 
+    "ts727": [
+        2086900, 
+        {
+            "transcript": "ok"
+        }
+    ], 
+    "ts462": [
+        1391380
+    ], 
+    "ts463": [
+        1392400, 
+        {
+            "transcript": "right? why do you change it,"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts460": [
+        1387820
+    ], 
+    "ts461": [
+        1389600, 
+        {
+            "transcript": "Its a knob that you want to change"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts466": [
+        1395880
+    ], 
+    "ts467": [
+        1397060, 
+        {
+            "transcript": "something is not at the required value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts464": [
+        1393680
+    ], 
+    "ts465": [
+        1394820, 
+        {
+            "transcript": "because something is not good,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts468": [
+        1398780
+    ], 
+    "ts469": [
+        1399860, 
+        {
+            "transcript": "You want to maintain the temperature at 25 degrees, but suddenly some 20 people have entered from outside, so temperature has gone up."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts299": [
+        913780, 
+        {
+            "transcript": "because of that disturbance value, we need to study the course on control."
+        }, 
+        {
+            "introduce": "Motivation"
+        }
+    ], 
+    "ts298": [
+        912760
+    ], 
+    "ts749": [
+        2160060, 
+        {
+            "transcript": "Here is result."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts748": [
+        2158880
+    ], 
+    "ts628": [
+        1861520
+    ], 
+    "ts291": [
+        884680, 
+        {
+            "transcript": "In fact, here I should point out - supposing there is no disturbance at all in the "
+        }
+    ], 
+    "ts290": [
+        882680
+    ], 
+    "ts293": [
+        891280, 
+        {
+            "transcript": "we don't need to control the system at all. You bring it to some value and just maintain it."
+        }
+    ], 
+    "ts292": [
+        888740
+    ], 
+    "ts295": [
+        898020, 
+        {
+            "transcript": "You don't need to measure anything. You know that there will be no change."
+        }
+    ], 
+    "ts294": [
+        896020
+    ], 
+    "ts297": [
+        902400, 
+        {
+            "transcript": "Weather will not change. People will not come in and go out. Their heat generation is the same. If you know all that, then you say, \"I will set the thermostat at this value. It will always.."
+        }
+    ], 
+    "ts296": [
+        901340
+    ], 
+    "ts426": [
+        1306040
+    ], 
+    "ts729": [
+        2092239, 
+        {
+            "transcript": "I think this, I also Mentioned, so I can skip all  this"
+        }
+    ], 
+    "ts126": [
+        411020, 
+        {
+            "transcript": "So, distillation columns you're familiar with."
+        }, 
+        {
+            "diagram": "Distillation Column"
+        }
+    ], 
+    "ts124": [
+        407620
+    ], 
+    "ts123": [
+        395680, 
+        {
+            "transcript": "your tank or your vessel, your reactor column - whatever it is. Whatever you do prior to that also has an objective. You want to bring it to some particular temperature. Right?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Process Stream"
+        }
+    ], 
+    "ts122": [
+        394400
+    ], 
+    "ts121": [
+        384380, 
+        {
+            "transcript": "You want to bring it to a particular temperature. Ok? So you pre-heat before this stream enters"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Heat the Process Stream"
+        }
+    ], 
+    "ts120": [
+        382760
+    ], 
+    "ts686": [
+        1984880, 
+        {
+            "transcript": "there is no name for that yet so, will put it there."
+        }
+    ], 
+    "ts684": [
+        1982860
+    ], 
+    "ts682": [
+        1974820, 
+        {
+            "transcript": "So, these are the Textbooks. By the way I going to put the slides on the forums either in moodle or courses"
+        }
+    ], 
+    "ts427": [
+        1307860, 
+        {
+            "transcript": "so now, they can not.. If they take a decision they would use this new crude"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed is procured from outside/market"
+        }
+    ], 
+    "ts129": [
+        415140, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts128": [
+        414020
+    ], 
+    "ts518": [
+        1575040
+    ], 
+    "ts519": [
+        1577160, 
+        {
+            "transcript": "Is that ok?"
+        }
+    ], 
+    "ts516": [
+        1570720
+    ], 
+    "ts517": [
+        1571940, 
+        {
+            "transcript": "so you want to control the temperature to 25."
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts514": [
+        1566240
+    ], 
+    "ts515": [
+        1567540, 
+        {
+            "transcript": "so it is not at the required value. You wanted it to be at 25."
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts512": [
+        1557220
+    ], 
+    "ts513": [
+        1561460, 
+        {
+            "transcript": "correct! What is controlled? temperature you want to maintain! Room temperature - 25 degrees. It went to 35."
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts510": [
+        1553440
+    ], 
+    "ts511": [
+        1555700, 
+        {
+            "transcript": "What is controlled? meaning?"
+        }
+    ], 
+    "ts792": [
+        2278920
+    ], 
+    "ts632": [
+        1866020
+    ], 
+    "ts630": [
+        1863980, 
+        {
+            "transcript": "one output composition constant."
+        }
+    ], 
+    "ts636": [
+        1874820
+    ], 
+    "ts634": [
+        1867220, 
+        {
+            "transcript": "Control streams flow can be change,this is control valve,streams can be changed and we can produce composition at the desired."
+        }
+    ], 
+    "ts826": [
+        2337580, 
+        {
+            "transcript": "So, What we learned today, Introduction to Process Control, Variables."
+        }, 
+        {
+            "summary": "PostSummary"
+        }
+    ], 
+    "ts638": [
+        1876880, 
+        {
+            "transcript": "This is further emphasizes about  feed concentration, feed concentration is in general"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts824": [
+        2333280
+    ], 
+    "ts422": [
+        1277300
+    ], 
+    "ts228": [
+        685280
+    ], 
+    "ts229": [
+        686300, 
+        {
+            "transcript": "Heat flows, in more"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts569": [
+        1700800, 
+        {
+            "transcript": "We will not spend too much time on this. We might discuss this later if required. For example, you might say that let me control"
+        }
+    ], 
+    "ts220": [
+        647440
+    ], 
+    "ts221": [
+        649360, 
+        {
+            "transcript": "There is a controlled variable. So, as I said, this is a system or a process. It could be a reactor, it could be a column, it could be a heater, it could be an exchange process, flow control system, whatever that is."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variable from Control Perspective"
+        }
+    ], 
+    "ts222": [
+        661040
+    ], 
+    "ts223": [
+        662140, 
+        {
+            "transcript": "Here is something that you want to achieve. What is it that you want to achieve? You want to control something. You want to maintain something at a specific value. Thermostat, for example or a room temperature control, for example. You want to maintain the room at a particular temperature. So, that becomes a controlled variable. "
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled variable"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Thermostat"
+        }
+    ], 
+    "ts224": [
+        677800
+    ], 
+    "ts225": [
+        678940, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts226": [
+        679140
+    ], 
+    "ts227": [
+        680940, 
+        {
+            "transcript": "Can somebody point out what the disturbance is in a room temperature control?"
+        }, 
+        {
+            "question": "StimulatingThought"
+        }
+    ], 
+    "ts314": [
+        945120
+    ], 
+    "ts316": [
+        947660, 
+        {
+            "transcript": "It's also known as the control effort. As I mentioned earlier, these are not free. It costs money."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Effort"
+        }
+    ], 
+    "ts310": [
+        934120, 
+        {
+            "transcript": "and manipulated variable is a variable that can offset."
+        }
+    ], 
+    "ts312": [
+        938000
+    ], 
+    "ts313": [
+        939360, 
+        {
+            "transcript": "Disturbance variable, i.e. it can compensate for the disturbance variable if"
+        }
+    ], 
+    "ts318": [
+        969920
+    ], 
+    "ts319": [
+        971360, 
+        {
+            "transcript": "because, otherwise - if you think it's free, you might waste it. You might say that - \"Cooling water - Water doesn't cost anything, let me plug the  system\", but water actually costs."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Effort"
+        }
+    ], 
+    "ts259": [
+        764980, 
+        {
+            "transcript": "To formalize that, manipulated variables are adjusted"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable "
+        }
+    ], 
+    "ts258": [
+        761420
+    ], 
+    "ts708": [
+        2028300, 
+        {
+            "transcript": "I don't know whether,I mentioned this earlier,Scilab is used extensively in CNES.I have already talked about this"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Scilab"
+        }
+    ], 
+    "ts255": [
+        738140, 
+        {
+            "transcript": "Current supplied to the heater or the refrigeration system or the valve that sends cold air. You send more or less cold air, depending on the temperature. If the temperature goes up, you might do something.If you know lot of people going to come, after all you can make it at lower value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintain Temperature at particular value"
+        }
+    ], 
+    "ts254": [
+        736880
+    ], 
+    "ts257": [
+        761000, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts256": [
+        759860
+    ], 
+    "ts251": [
+        728140, 
+        {
+            "transcript": "These are all disturbance variables."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts250": [
+        727020
+    ], 
+    "ts253": [
+        731800, 
+        {
+            "transcript": "You want to maintain the temperature at a particular value. So, what is the manipulated variable?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts252": [
+        730420
+    ], 
+    "ts488": [
+        1465220
+    ], 
+    "ts489": [
+        1466900, 
+        {
+            "transcript": "initial setting.It is not required. you might even say that - I don't know if you have done Gas Chromatography."
+        }
+    ], 
+    "ts484": [
+        1459760
+    ], 
+    "ts485": [
+        1460960, 
+        {
+            "transcript": "so, let me change it. let me adjust it."
+        }
+    ], 
+    "ts486": [
+        1462500
+    ], 
+    "ts487": [
+        1463980, 
+        {
+            "transcript": "Its for, only what?"
+        }
+    ], 
+    "ts480": [
+        1436480
+    ], 
+    "ts481": [
+        1438920, 
+        {
+            "transcript": "you can say \"what is the temperature now? It is not at the value. So, what should I do?\""
+        }
+    ], 
+    "ts482": [
+        1442940
+    ], 
+    "ts483": [
+        1444340, 
+        {
+            "transcript": "In fact this is how it is going to be implemented. We are going to, in fact you will study the single body heat system, there you will monitor every time instance. At every time instance, you will say, \"What is the temperature? Where should it be? And where am I?\""
+        }
+    ], 
+    "ts743": [
+        2143240, 
+        {
+            "transcript": "Here there is something called Scilab on GARUDA .So I clicked it"
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts742": [
+        2141900
+    ], 
+    "ts552": [
+        1635380
+    ], 
+    "ts553": [
+        1638020, 
+        {
+            "transcript": "Of course, it looks very complicated. Don't worry about that."
+        }
+    ], 
+    "ts550": [
+        1630260, 
+        {
+            "transcript": "so, what I want to ask you is, lets look at one control strategy - distillation."
+        }
+    ], 
+    "ts740": [
+        2129880, 
+        {
+            "transcript": "We have close to 200 textbook companions, I think i have mentioned about Scilab textbook companion,did i talk about it? may be I did.I will show you the website, so basically it is Scilab .in website."
+        }
+    ], 
+    "ts556": [
+        1651800
+    ], 
+    "ts557": [
+        1653000, 
+        {
+            "transcript": "and wherever I have put valves"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts554": [
+        1641780
+    ], 
+    "ts555": [
+        1642960, 
+        {
+            "transcript": "Remember, what we want to do is, we want to maintain the composition at a required value, the bottoms composition at a required value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts747": [
+        2155220, 
+        {
+            "transcript": "It says click hereto access Scilab on GARUDA Cloud so, I clicked it."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts558": [
+        1654780
+    ], 
+    "ts559": [
+        1655880, 
+        {
+            "transcript": "notice that there is valve here, there is a valve here. That means I am changing it, there is a knob. Thats how I am maintaining it. so here I am saying, I will change the withdrawal rate, I will change the reflux rate."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts746": [
+        2153940
+    ], 
+    "ts790": [
+        2273580, 
+        {
+            "transcript": "We can execute them on GARUDA Plot, let me just finish this"
+        }
+    ], 
+    "ts419": [
+        1268780, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts418": [
+        1267440
+    ], 
+    "ts794": [
+        2280660
+    ], 
+    "ts745": [
+        2148460, 
+        {
+            "transcript": "to get this link Scilab on GARUDA Cloud, this maintained by CDAC (Bangalore)."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts796": [
+        2283020, 
+        {
+            "transcript": "probably we can  take up the lab in the  tutorial session, I going to skip all of that because we are running out of time "
+        }
+    ], 
+    "ts302": [
+        923340, 
+        {
+            "transcript": "But, it is important to remember that we have no handle on this. We cannot touch"
+        }
+    ], 
+    "ts413": [
+        1254500, 
+        {
+            "transcript": "and typically"
+        }
+    ], 
+    "ts412": [
+        1253200
+    ], 
+    "ts411": [
+        1250060, 
+        {
+            "transcript": "Disturbance variable is something on which we have no handle"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts410": [
+        1246840
+    ], 
+    "ts416": [
+        1257160, 
+        {
+            "transcript": "a feed is something, that is a disturbance variable unless it is mentioned otherwise. Because it is something that you procure from outside, procure from the market. For example,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Refining of Crude "
+        }
+    ], 
+    "ts414": [
+        1256040
+    ], 
+    "ts677": [
+        1949460, 
+        {
+            "transcript": "We will go to the last part of  this course,it is Course Organisation.I want to spend about ten minutes to"
+        }
+    ], 
+    "ts676": [
+        1948300
+    ], 
+    "ts674": [
+        1948040, 
+        {
+            "transcript": "Ok."
+        }
+    ], 
+    "ts672": [
+        1945380
+    ], 
+    "ts671": [
+        1945060, 
+        {
+            "transcript": "Is that ok?"
+        }
+    ], 
+    "ts670": [
+        1943640
+    ], 
+    "ts679": [
+        1959620, 
+        {
+            "transcript": "how this course is going to be organise? whatever we discussed until now,we are going to see lot more out, but I thought i will just spend  some time  last ten minutes, just talk about Course Organisation."
+        }
+    ], 
+    "ts678": [
+        1957020
+    ], 
+    "ts178": [
+        543560
+    ], 
+    "ts179": [
+        544580, 
+        {
+            "transcript": "If these two are fixed, what happens to the flow?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Flow"
+        }
+    ], 
+    "ts174": [
+        531360
+    ], 
+    "ts175": [
+        532660, 
+        {
+            "transcript": "Now we have assumed a very simple model."
+        }
+    ], 
+    "ts176": [
+        534220
+    ], 
+    "ts177": [
+        535260, 
+        {
+            "transcript": "Right? Valve opening or valve position or something like that. And, we say that outflow is proportional to the height and valve opening."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Valve Opening (x)"
+        }
+    ], 
+    "ts170": [
+        521580
+    ], 
+    "ts171": [
+        524860, 
+        {
+            "transcript": "Before that, what is x?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts172": [
+        526000
+    ], 
+    "ts173": [
+        528260, 
+        {
+            "transcript": "x refers to the valve opening"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Valve Opening (x)"
+        }
+    ], 
+    "ts507": [
+        1551660, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts821": [
+        2326000, 
+        {
+            "transcript": "So there are some booking rules, you can not go  and block all the slots can't do that, so we have some safety."
+        }
+    ], 
+    "ts78": [
+        273780
+    ], 
+    "ts79": [
+        276560, 
+        {
+            "transcript": "come across"
+        }
+    ], 
+    "ts72": [
+        262780
+    ], 
+    "ts73": [
+        264860, 
+        {
+            "transcript": "Manipulate some other quantity"
+        }
+    ], 
+    "ts70": [
+        260360
+    ], 
+    "ts71": [
+        261760, 
+        {
+            "transcript": "If there is a deviation"
+        }
+    ], 
+    "ts76": [
+        269420
+    ], 
+    "ts77": [
+        271360, 
+        {
+            "transcript": "Example of a control process that you might"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Process"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Control Process"
+        }
+    ], 
+    "ts74": [
+        265980
+    ], 
+    "ts75": [
+        267840, 
+        {
+            "transcript": "Give an example, anyone?"
+        }
+    ], 
+    "ts620": [
+        1848880
+    ], 
+    "ts621": [
+        1850980, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts804": [
+        2302300, 
+        {
+            "transcript": "slides, you can go through this."
+        }
+    ], 
+    "ts358": [
+        1099060
+    ], 
+    "ts210": [
+        633180
+    ], 
+    "ts212": [
+        634720, 
+        {
+            "transcript": "From control perspective, these are some of the variables that we will deal with."
+        }, 
+        {
+            "diagram": "Variables from Control Perspective"
+        }
+    ], 
+    "ts215": [
+        641100, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts214": [
+        639760
+    ], 
+    "ts217": [
+        643040, 
+        {
+            "transcript": "There is a disturbance variable."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "variables from Control Perspective"
+        }
+    ], 
+    "ts216": [
+        641400
+    ], 
+    "ts219": [
+        647220, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts218": [
+        645940
+    ], 
+    "ts352": [
+        1076340, 
+        {
+            "transcript": "We will apply this to the examples."
+        }
+    ], 
+    "ts354": [
+        1077980
+    ], 
+    "ts356": [
+        1082640, 
+        {
+            "transcript": "We don't have Akash yet. Akash will be coming shortly. Maybe next class. Certainly this week. Then you will be using the clicker software in that. In the mean time, I would want you to say -1, 2, or 3."
+        }
+    ], 
+    "ts496": [
+        1511980
+    ], 
+    "ts498": [
+        1519900
+    ], 
+    "ts442": [
+        1348260
+    ], 
+    "ts754": [
+        2169280
+    ], 
+    "ts755": [
+        2170540, 
+        {
+            "transcript": "There are some Analog Electronics books, there are some Chemical Engineering books"
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts756": [
+        2173820
+    ], 
+    "ts757": [
+        2175580, 
+        {
+            "transcript": "for us Control Theory and Control Systems."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts750": [
+        2160680
+    ], 
+    "ts328": [
+        1010760, 
+        {
+            "transcript": "This is another perspective of this. Variables from Input/Output point of view. These are the inputs that affect the system."
+        }, 
+        {
+            "define": "Inputs : inputs that affect the system."
+        }, 
+        {
+            "diagram": "Variables from input- output point of view"
+        }
+    ], 
+    "ts459": [
+        1385540, 
+        {
+            "transcript": "Manipulated. You can think of this as a valve."
+        }
+    ], 
+    "ts458": [
+        1384400
+    ], 
+    "ts325": [
+        1004260, 
+        {
+            "transcript": "That's why you have to remember this. It is important.."
+        }
+    ], 
+    "ts324": [
+        1002900
+    ], 
+    "ts455": [
+        1378600, 
+        {
+            "transcript": "If it is not clear to anybody, just raise your hand."
+        }
+    ], 
+    "ts326": [
+        1006040
+    ], 
+    "ts321": [
+        985260, 
+        {
+            "transcript": "You may come up with wrong solutions if you implement it as a mathematical problem and you say that it doesn't cost anything, it might say \"Put infinite amount of cold water\""
+        }
+    ], 
+    "ts320": [
+        984120
+    ], 
+    "ts323": [
+        998860, 
+        {
+            "transcript": "That will be a wrong solution because you forgot to mention that it cost."
+        }
+    ], 
+    "ts322": [
+        996240
+    ], 
+    "ts288": [
+        881380
+    ], 
+    "ts289": [
+        882440, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts8": [
+        46000, 
+        {
+            "transcript": "We will discuss some examples"
+        }
+    ], 
+    "ts6": [
+        44080
+    ], 
+    "ts4": [
+        36260
+    ], 
+    "ts5": [
+        39200, 
+        {
+            "transcript": "In this lecture we will give a brief overview of what process control is"
+        }, 
+        {
+            "introduce": "Aims&Objectives"
+        }
+    ], 
+    "ts2": [
+        23820
+    ], 
+    "ts3": [
+        30400, 
+        {
+            "transcript": "I am delighted to begin the first formal lecture in this course."
+        }
+    ], 
+    "ts284": [
+        873720
+    ], 
+    "ts1": [
+        0, 
+        {
+            "transcript": "Music"
+        }
+    ], 
+    "ts758": [
+        2178540
+    ], 
+    "ts680": [
+        1970460
+    ], 
+    "ts828": [
+        2343200
+    ], 
+    "ts130": [
+        415480
+    ], 
+    "ts131": [
+        416540, 
+        {
+            "transcript": "We will not spend too much time on this. You have a feed entering here and then you have a distillate"
+        }
+    ], 
+    "ts132": [
+        422260
+    ], 
+    "ts133": [
+        423620, 
+        {
+            "transcript": "going at the top, bottoms - then you heat in the re-boiler."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Distillation column"
+        }
+    ], 
+    "ts134": [
+        429920
+    ], 
+    "ts135": [
+        430960, 
+        {
+            "transcript": "You cool in the condenser"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Distillation column"
+        }
+    ], 
+    "ts136": [
+        432500
+    ], 
+    "ts137": [
+        433680, 
+        {
+            "transcript": "So, many of these things are there and there are associated variables"
+        }
+    ], 
+    "ts138": [
+        437700
+    ], 
+    "ts139": [
+        439520, 
+        {
+            "transcript": "processes  and so on,"
+        }
+    ], 
+    "ts528": [
+        1590160
+    ], 
+    "ts522": [
+        1581140
+    ], 
+    "ts521": [
+        1579520, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts520": [
+        1577520
+    ], 
+    "ts527": [
+        1586300, 
+        {
+            "transcript": "Recall that it heats the process stream with a heating medium."
+        }
+    ], 
+    "ts526": [
+        1584780
+    ], 
+    "ts524": [
+        1584360, 
+        {
+            "transcript": "summary."
+        }
+    ], 
+    "ts38": [
+        151020
+    ], 
+    "ts39": [
+        152460, 
+        {
+            "transcript": "What should be the flow rate?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Unit Level"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Unit Level"
+        }
+    ], 
+    "ts36": [
+        150340, 
+        {
+            "transcript": "For example"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Unit Level"
+        }
+    ], 
+    "ts34": [
+        149100
+    ], 
+    "ts32": [
+        144020
+    ], 
+    "ts33": [
+        145480, 
+        {
+            "transcript": "The next level is at the unit level"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Unit Level"
+        }
+    ], 
+    "ts30": [
+        138460
+    ], 
+    "ts31": [
+        140860, 
+        {
+            "transcript": "It is done at the plant level - what to do, and so on."
+        }
+    ], 
+    "ts440": [
+        1344820
+    ], 
+    "ts144": [
+        445340, 
+        {
+            "transcript": "For example, here we may want to maintain the compositions at desired value"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Distillation"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "maintain the compositions at desired value"
+        }
+    ], 
+    "ts147": [
+        450520, 
+        {
+            "transcript": "Ok?"
+        }
+    ], 
+    "ts146": [
+        449340
+    ], 
+    "ts141": [
+        441720, 
+        {
+            "transcript": "we'll come back to this shortly"
+        }
+    ], 
+    "ts140": [
+        440580
+    ], 
+    "ts142": [
+        443020
+    ], 
+    "ts624": [
+        1854320
+    ], 
+    "ts626": [
+        1856540, 
+        {
+            "transcript": "overflow it may,it always overflow so,that is simple  kind of"
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts149": [
+        451820, 
+        {
+            "transcript": "The design is already given in the process. Somebody has already designed. He has already told \"I have done some optimization\" The distillate should be maintained at, whatever, 99.5 degrees"
+        }, 
+        {
+            "explain": "Recounting"
+        }, 
+        {
+            "topic": "Distillation"
+        }
+    ], 
+    "ts148": [
+        450780
+    ], 
+    "ts622": [
+        1851140
+    ], 
+    "ts623": [
+        1853260, 
+        {
+            "transcript": "No,its an overflow "
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts450": [
+        1366000
+    ], 
+    "ts830": [
+        2345920, 
+        {
+            "transcript": "Discussed some examples."
+        }, 
+        {
+            "summary": "PostSummary"
+        }
+    ], 
+    "ts832": [
+        2346840
+    ], 
+    "ts783": [
+        2238900, 
+        {
+            "transcript": "three functions or three hundred into two hundred textbooks, so we have very large numbers, sometimes it is difficult to do that, let me just take some other example"
+        }
+    ], 
+    "ts782": [
+        2237680
+    ], 
+    "ts578": [
+        1741240
+    ], 
+    "ts781": [
+        2226040, 
+        {
+            "transcript": "In fact we have to put a... Feedback here saying that \"this doesn't work\"so we will know,because you look at the number of example we have, number of functions we have, in every book we have hundreds of examples."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts579": [
+        1743560, 
+        {
+            "transcript": "Concentration value,"
+        }
+    ], 
+    "ts780": [
+        2223340
+    ], 
+    "ts361": [
+        1107680, 
+        {
+            "transcript": "what is the problem? It's an example."
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Fluid heater"
+        }
+    ], 
+    "ts360": [
+        1106200
+    ], 
+    "ts363": [
+        1113140, 
+        {
+            "transcript": "It's a fluid heater. It heats the process stream to a required value. That's what it does."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Fluid Heater"
+        }
+    ], 
+    "ts362": [
+        1110840
+    ], 
+    "ts365": [
+        1120580, 
+        {
+            "transcript": "Because your plant requires the stream at a particular value, this is a pre-heater. It heats it to a particular value and sends it."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Fluid Heater"
+        }
+    ], 
+    "ts364": [
+        1119220
+    ], 
+    "ts367": [
+        1129920, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts366": [
+        1128180
+    ], 
+    "ts369": [
+        1132040, 
+        {
+            "transcript": "You don't have to worry about where it is going to be used, what happens subsequently. Don't have to worry that it is a pre-heater. This is our universe. This is our system."
+        }
+    ], 
+    "ts368": [
+        1130040
+    ], 
+    "ts424": [
+        1290960
+    ], 
+    "ts759": [
+        2180600, 
+        {
+            "transcript": "It says what book you want to select?"
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts718": [
+        2045240
+    ], 
+    "ts719": [
+        2054520, 
+        {
+            "transcript": "ok"
+        }
+    ], 
+    "ts425": [
+        1292160, 
+        {
+            "transcript": "so tomorrow there is a MOU between our minister and some other middle eastern country, and they say \"We have a deal, we give this crude\" may be \"50 cents cheaper per barrel\". So Reliance says \"ok, I can use that\""
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed is procured from outside/market"
+        }
+    ], 
+    "ts248": [
+        721220
+    ], 
+    "ts249": [
+        722480, 
+        {
+            "transcript": "Suddenly, ten people come in and leave the door open. So, there are many such things that can happen."
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts246": [
+        718520
+    ], 
+    "ts247": [
+        719760, 
+        {
+            "transcript": "What about people coming in and going out?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts244": [
+        711520
+    ], 
+    "ts245": [
+        712840, 
+        {
+            "transcript": "Different people. In fact, these are some things that are difficult to model. "
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts242": [
+        709960
+    ], 
+    "ts243": [
+        711100, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts240": [
+        707640
+    ], 
+    "ts241": [
+        709620, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts570": [
+        1710620
+    ], 
+    "ts420": [
+        1269420
+    ], 
+    "ts571": [
+        1711680, 
+        {
+            "transcript": "I want to control the level here, level transmitter with the bottom withdrawal rate,that is  also very important thing  in the distillation control. You  want to maintain  some liquid, if don't maintain some liquid,it  runs dry for example the  whole distillation will be upset."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts421": [
+        1270440, 
+        {
+            "transcript": "lets look at refining of crude"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed is procured from outside/market"
+        }
+    ], 
+    "ts573": [
+        1732440, 
+        {
+            "transcript": "In that sense distillation column is lot more complicated."
+        }
+    ], 
+    "ts404": [
+        1242200
+    ], 
+    "ts405": [
+        1244340, 
+        {
+            "transcript": "ok,"
+        }
+    ], 
+    "ts406": [
+        1244580
+    ], 
+    "ts400": [
+        1227740
+    ], 
+    "ts401": [
+        1230140, 
+        {
+            "transcript": "Ok,because I told you that this universe. What is this universe?"
+        }, 
+        {
+            "define": "Universe : universe is the preheater, It takes something from somewhere, and sends it out for some purpose"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Universe"
+        }
+    ], 
+    "ts402": [
+        1234320
+    ], 
+    "ts403": [
+        1235860, 
+        {
+            "transcript": "the preheater. The preheater is your universe. It takes something from somewhere, and sends it out for some purpose."
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Universe"
+        }
+    ], 
+    "ts567": [
+        1691880, 
+        {
+            "transcript": "control strategy. The simple control strategy of room heating is very easy. But in a real plant it could be lot more complicated."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts566": [
+        1690420
+    ], 
+    "ts564": [
+        1679900, 
+        {
+            "transcript": "and of course, condenser load, so these are all condenser coolant, how much coolant is going through, So all of these are changed. So here is one"
+        }, 
+        {
+            "diagram": "Distillation Column: Control Strategy"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts408": [
+        1245600, 
+        {
+            "transcript": "and I had mentioned it here."
+        }
+    ], 
+    "ts562": [
+        1678620
+    ], 
+    "ts561": [
+        1672620, 
+        {
+            "transcript": "I will change the bottoms withdrawal rate, I will change the re-boiler "
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Strategy - Distillation Column."
+        }
+    ], 
+    "ts560": [
+        1671560
+    ], 
+    "ts769": [
+        2211140, 
+        {
+            "transcript": "this, Steady State Error."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts768": [
+        2209600
+    ], 
+    "ts818": [
+        2323180
+    ], 
+    "ts765": [
+        2203700, 
+        {
+            "transcript": "It will says Feedback Characteristics of Control System.You can choose whatever;"
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts764": [
+        2201580
+    ], 
+    "ts767": [
+        2208080, 
+        {
+            "transcript": "What example do you want to solve?"
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts766": [
+        2206880
+    ], 
+    "ts761": [
+        2184040, 
+        {
+            "transcript": "Ok, by the way our textbook is  getting included, it will included shortly, most of the examples are already have been coded , but let me just check Control System Engineering by Nagarath Gopal."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts760": [
+        2182080
+    ], 
+    "ts763": [
+        2199720, 
+        {
+            "transcript": "Then it will say what chapter are you working on? "
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts762": [
+        2198320
+    ], 
+    "ts584": [
+        1754700, 
+        {
+            "transcript": "Ok,"
+        }
+    ], 
+    "ts586": [
+        1756080
+    ], 
+    "ts581": [
+        1746560, 
+        {
+            "transcript": "will discuss this later, ok just  a give feel for, what kind of things are done in this?"
+        }
+    ], 
+    "ts580": [
+        1744220
+    ], 
+    "ts582": [
+        1752140
+    ], 
+    "ts588": [
+        1759360, 
+        {
+            "transcript": "will see this little later, but you can see that, these three"
+        }
+    ], 
+    "ts800": [
+        2296100, 
+        {
+            "transcript": "I will put this"
+        }
+    ], 
+    "ts704": [
+        2021900
+    ], 
+    "ts802": [
+        2299440
+    ], 
+    "ts660": [
+        1920580
+    ], 
+    "ts661": [
+        1923940, 
+        {
+            "transcript": "Feed flow rate is definitely not a manipulated."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed flow rate"
+        }
+    ], 
+    "ts662": [
+        1926000
+    ], 
+    "ts663": [
+        1927240, 
+        {
+            "transcript": "That much I can say, can be a disturbance variable,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed flow rate"
+        }
+    ], 
+    "ts664": [
+        1929460
+    ], 
+    "ts665": [
+        1930780, 
+        {
+            "transcript": "but it will never be a manipulated variable.Why it will be never be a manipulated variable?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed flow rate"
+        }
+    ], 
+    "ts666": [
+        1934560
+    ], 
+    "ts667": [
+        1935900, 
+        {
+            "transcript": "because,every plant has a target value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed flow rate"
+        }
+    ], 
+    "ts668": [
+        1938300
+    ], 
+    "ts669": [
+        1940340, 
+        {
+            "transcript": "I want to produce so many tonnes,you are not going to change it, you are not going to manipulate it."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed flow rate"
+        }
+    ], 
+    "ts726": [
+        2080460
+    ], 
+    "ts109": [
+        350500, 
+        {
+            "transcript": "reducing  the effluence and so on. These are all logical kinds of things. But, we try to achieve all of these in this course."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Benefits of Process Control Subject to Safety."
+        }
+    ], 
+    "ts108": [
+        349480
+    ], 
+    "ts806": [
+        2303980
+    ], 
+    "ts441": [
+        1345980, 
+        {
+            "transcript": "Does it answer the people who have chosen 2?"
+        }
+    ], 
+    "ts103": [
+        324340, 
+        {
+            "transcript": "The first and foremost is the safety"
+        }
+    ], 
+    "ts102": [
+        323060
+    ], 
+    "ts105": [
+        327640, 
+        {
+            "transcript": "You don't want the plant to blow up. You don't want tubes to burst and send away poisonous liquids or things like that"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Benefits of Process Control"
+        }
+    ], 
+    "ts104": [
+        326420
+    ], 
+    "ts107": [
+        342620, 
+        {
+            "transcript": "Second one, of course, is subject to safety, maximising the profit. And, then, of course, being good to the environment"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Benefits of Process Control"
+        }
+    ], 
+    "ts106": [
+        341000
+    ], 
+    "ts64": [
+        244400, 
+        {
+            "transcript": "Then, we ask this question, what is process control?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Process Control"
+        }
+    ], 
+    "ts67": [
+        250780, 
+        {
+            "transcript": "It is an area that deals with control of processes"
+        }, 
+        {
+            "define": "Process Control:It deals with the control of processes"
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts66": [
+        248520
+    ], 
+    "ts61": [
+        228460, 
+        {
+            "transcript": "It is something very fundamental. So, the tools that are developed convey a lot of important ideas, principles. So we understand them. We'll spend quite a bit of time in understanding these in this"
+        }
+    ], 
+    "ts60": [
+        225520
+    ], 
+    "ts62": [
+        242940
+    ], 
+    "ts444": [
+        1351080, 
+        {
+            "transcript": "Next one. lets take fluid heater"
+        }
+    ], 
+    "ts69": [
+        256019, 
+        {
+            "transcript": "The objective is maintaining variables at desired values"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining Variable"
+        }
+    ], 
+    "ts68": [
+        253980
+    ], 
+    "ts446": [
+        1354480
+    ], 
+    "ts447": [
+        1356680, 
+        {
+            "transcript": "Its the same thing. \"The flow rate of the heating medium used is\". What about this? This is straight forward, right?"
+        }, 
+        {
+            "question": "StimulatingThought"
+        }
+    ], 
+    "ts615": [
+        1835500, 
+        {
+            "transcript": "Flow rate is of course is taken care of because,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts614": [
+        1834320
+    ], 
+    "ts617": [
+        1840220, 
+        {
+            "transcript": "Why the flow rate is taken care of?"
+        }, 
+        {
+            "question": "StimulatingThought"
+        }
+    ], 
+    "ts616": [
+        1837800
+    ], 
+    "ts611": [
+        1822680, 
+        {
+            "transcript": "So, what you do is, you have a pure component"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts610": [
+        1821520
+    ], 
+    "ts613": [
+        1828840, 
+        {
+            "transcript": "Ok, that you adjust in different quantities so as to maintain x at the right."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts612": [
+        1827720
+    ], 
+    "ts619": [
+        1847760, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts618": [
+        1842260
+    ], 
+    "ts202": [
+        604740
+    ], 
+    "ts200": [
+        601720, 
+        {
+            "transcript": "It's a very simple thing and here is the photograph."
+        }
+    ], 
+    "ts206": [
+        610920
+    ], 
+    "ts207": [
+        612220, 
+        {
+            "transcript": "use the words \"process\" and \"system\" interchangeably in this course. Normally, we use the word \"process\" in Chemical Engineering courses. But, in Control systems area, people generally call it a system."
+        }
+    ], 
+    "ts204": [
+        608780, 
+        {
+            "transcript": "We will "
+        }
+    ], 
+    "ts208": [
+        625520
+    ], 
+    "ts209": [
+        626560, 
+        {
+            "transcript": "So, because of that, we'll use both words in an interchangeable manner."
+        }
+    ], 
+    "ts99": [
+        320400
+    ], 
+    "ts359": [
+        1100960, 
+        {
+            "transcript": "The temperature - understand the question first - the temperature of the process stream"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Process stream"
+        }
+    ], 
+    "ts90": [
+        303540
+    ], 
+    "ts91": [
+        304820, 
+        {
+            "transcript": "Fair enough"
+        }
+    ], 
+    "ts92": [
+        305480
+    ], 
+    "ts93": [
+        306640, 
+        {
+            "transcript": "So, we will see some more examples of such"
+        }
+    ], 
+    "ts94": [
+        311180
+    ], 
+    "ts95": [
+        313560, 
+        {
+            "transcript": "application in this lecture - from process control."
+        }
+    ], 
+    "ts96": [
+        318160
+    ], 
+    "ts710": [
+        2033660
+    ], 
+    "ts834": [
+        2348800, 
+        {
+            "transcript": "Course Organisation, we didn't discuss few things lab and particular details, that will be discussed in one of tutorial sessions , we have Rupak wakde and Ganesh both are there"
+        }, 
+        {
+            "summary": "FuturePreview"
+        }
+    ], 
+    "ts712": [
+        2034800, 
+        {
+            "transcript": "when in last class? ok good, so we can quickly go through this"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts714": [
+        2038180
+    ], 
+    "ts350": [
+        1073320
+    ], 
+    "ts837": [
+        2364840, 
+        {
+            "transcript": "they will handle that session."
+        }
+    ], 
+    "ts716": [
+        2040780, 
+        {
+            "transcript": "what I wanted to... I don't think I showed this talk in the last class."
+        }
+    ], 
+    "ts448": [
+        1363000
+    ], 
+    "ts449": [
+        1365340, 
+        {
+            "transcript": " what is this?"
+        }
+    ], 
+    "ts723": [
+        2073840, 
+        {
+            "transcript": "widely used in CNES flight dynamics departments."
+        }, 
+        {
+            "explain": "Reporting"
+        }, 
+        {
+            "topic": "Various use of Scilab"
+        }
+    ], 
+    "ts722": [
+        2072320
+    ], 
+    "ts725": [
+        2079860, 
+        {
+            "transcript": "So,I will skip that"
+        }
+    ], 
+    "ts724": [
+        2077480
+    ], 
+    "ts338": [
+        1042359
+    ], 
+    "ts339": [
+        1044880, 
+        {
+            "transcript": "disturbance comes. So, the controlled variable is changing. Similarly"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance, Manipulated variables, Controlled variable"
+        }
+    ], 
+    "ts336": [
+        1039579
+    ], 
+    "ts337": [
+        1040760, 
+        {
+            "transcript": "But, somehow the inputs"
+        }
+    ], 
+    "ts334": [
+        1031020
+    ], 
+    "ts335": [
+        1032140, 
+        {
+            "transcript": "Whatever we discussed earlier, I'm going to ask you \" What is the disturbance variable, what is the manipulated variable, what is the controlled variable?\" "
+        }, 
+        {
+            "question": "StimulatingThought"
+        }, 
+        {
+            "summary": "GeneralReview"
+        }
+    ], 
+    "ts332": [
+        1025940
+    ], 
+    "ts333": [
+        1027599, 
+        {
+            "transcript": "In fact, we will see all of this for the sample process."
+        }
+    ], 
+    "ts330": [
+        1019920
+    ], 
+    "ts331": [
+        1020980, 
+        {
+            "transcript": "The consequence is the output or the controlled variable."
+        }, 
+        {
+            "define": "Outputs : Output is the consequence or controlled variable.."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled Variable"
+        }
+    ], 
+    "ts836": [
+        2363780
+    ], 
+    "ts788": [
+        2270900
+    ], 
+    "ts839": [
+        2369600, 
+        {
+            "transcript": "Ok, Thank You."
+        }
+    ], 
+    "ts640": [
+        1883160
+    ], 
+    "ts534": [
+        1605400
+    ], 
+    "ts535": [
+        1606660, 
+        {
+            "transcript": "I am at 35. so you are not at the required value. there is an offset, there is an error, you try to correct."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Set Point"
+        }
+    ], 
+    "ts536": [
+        1612400
+    ], 
+    "ts530": [
+        1591720, 
+        {
+            "transcript": "Controlled variable is the temperature of the exit stream on process side. It is also known as a set point."
+        }, 
+        {
+            "define": " Set Point : Controlled variable is the temperature of the exit stream on process side. It is also known as a set point."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Set Point"
+        }
+    ], 
+    "ts532": [
+        1597100
+    ], 
+    "ts533": [
+        1598380, 
+        {
+            "transcript": "ok, control variable will always be compared with the set point. I want to be at 25 degrees, where am I at?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Set Point"
+        }
+    ], 
+    "ts538": [
+        1614300, 
+        {
+            "transcript": "Disturbance variable is the inlet conditions on process fluid."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts838": [
+        2368200
+    ], 
+    "ts383": [
+        1186120, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts382": [
+        1181080
+    ], 
+    "ts381": [
+        1179960, 
+        {
+            "transcript": "Very good. I see he has two."
+        }, 
+        {
+            "interaction": "Student Answer"
+        }
+    ], 
+    "ts380": [
+        1177580
+    ], 
+    "ts387": [
+        1194940, 
+        {
+            "transcript": "The answer is Controlled Variable. That is correct. It is straightforward."
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled Variable"
+        }
+    ], 
+    "ts386": [
+        1193520
+    ], 
+    "ts385": [
+        1190100, 
+        {
+            "transcript": "For temperature of the process stream at the exit - I think this is correct."
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled Variable"
+        }
+    ], 
+    "ts384": [
+        1186960
+    ], 
+    "ts435": [
+        1332840, 
+        {
+            "transcript": "typically, the feed to a system is something external to the system."
+        }
+    ], 
+    "ts434": [
+        1331600
+    ], 
+    "ts437": [
+        1340880, 
+        {
+            "transcript": "unless it is clearly marked out."
+        }
+    ], 
+    "ts388": [
+        1197600
+    ], 
+    "ts431": [
+        1318880, 
+        {
+            "transcript": "right?  or u go to the market and somebody says that \"I don't have that, but I have this at a much lower price. Do you want to use it?\""
+        }
+    ], 
+    "ts430": [
+        1317720
+    ], 
+    "ts433": [
+        1329700, 
+        {
+            "transcript": "so if we can use it, fantastic! "
+        }
+    ], 
+    "ts432": [
+        1328360
+    ], 
+    "ts29": [
+        134280, 
+        {
+            "transcript": "These often work with approximate models, ok?"
+        }
+    ], 
+    "ts28": [
+        133040
+    ], 
+    "ts21": [
+        102520, 
+        {
+            "transcript": "These are done through linear programming. You might even have to predict what will happen after three months, two months - should I procure them right now. So, the linear programming problem can actually take care of"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": " Decisions through Linear Programming"
+        }
+    ], 
+    "ts20": [
+        100680
+    ], 
+    "ts23": [
+        115420, 
+        {
+            "transcript": "client's profit in the next - for example - two months, three months. You might also have to project the selling price, let's say one week from now."
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Clients Profit "
+        }
+    ], 
+    "ts22": [
+        114360
+    ], 
+    "ts25": [
+        125340, 
+        {
+            "transcript": "So, there are some modelling issues"
+        }
+    ], 
+    "ts24": [
+        124140
+    ], 
+    "ts27": [
+        130520, 
+        {
+            "transcript": "There's quite a bit of linear programming involved"
+        }
+    ], 
+    "ts26": [
+        127900
+    ], 
+    "ts472": [
+        1410660
+    ], 
+    "ts156": [
+        483780, 
+        {
+            "transcript": "We have a mixing process. You may want to produce two streams or produce a specific output, which you might use elsewhere, for example."
+        }, 
+        {
+            "diagram": "Mixing Process"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Producing specific output from mixing process"
+        }
+    ], 
+    "ts658": [
+        1918920
+    ], 
+    "ts154": [
+        481800
+    ], 
+    "ts152": [
+        480480
+    ], 
+    "ts153": [
+        481660, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts150": [
+        462260
+    ], 
+    "ts151": [
+        463520, 
+        {
+            "transcript": "It's already given. So we're not talking about that. How to achieve that, what is the correct value - we are not talking about that. But, given the correct value - how to achieve it, how to maintain it at that value - that is what we're going to discuss. So, that is why we say - maintain compositions at desired value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintain Compositions at Desired Value."
+        }
+    ], 
+    "ts650": [
+        1895300, 
+        {
+            "transcript": "Feed flow rate, ok so Feed concentration is ok"
+        }
+    ], 
+    "ts653": [
+        1902220, 
+        {
+            "transcript": "normally Feed flow rate is decided by other considerations, however!"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed floe rate"
+        }
+    ], 
+    "ts652": [
+        1900060
+    ], 
+    "ts655": [
+        1908280, 
+        {
+            "transcript": "I just want to,"
+        }
+    ], 
+    "ts654": [
+        1907000
+    ], 
+    "ts158": [
+        496460
+    ], 
+    "ts656": [
+        1913000
+    ], 
+    "ts659": [
+        1920140, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts505": [
+        1537460, 
+        {
+            "transcript": "So you adjust, you compensate for that by manipulating the knob under your control. That is your manipulated variable or control effort or whatever, because it has associated cost."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variables"
+        }
+    ], 
+    "ts58": [
+        205080
+    ], 
+    "ts504": [
+        1536340
+    ], 
+    "ts54": [
+        192220, 
+        {
+            "transcript": "So, that is at the variable level. Achieving intended levels. How to get a specified flow rate, etc. A possible tool is PID control"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variable Level"
+        }
+    ], 
+    "ts56": [
+        203780
+    ], 
+    "ts57": [
+        205079, 
+        {
+            "transcript": "In fact, we will be spending most of our time in this course in the last one. Given that you want to maintain something at a particular value, how do you do that? Ok? So, we will look at the basics of that, different tools for that. Although this may seem very simple"
+        }
+    ], 
+    "ts50": [
+        176720
+    ], 
+    "ts51": [
+        179200, 
+        {
+            "transcript": "Once you figure out where you want to keep these, then the next question is - how do you do that. I want the temperature to be at 98 degrees Celsius. How do I do that. Right?"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts52": [
+        190280
+    ], 
+    "ts506": [
+        1550460
+    ], 
+    "ts501": [
+        1524740, 
+        {
+            "transcript": "So there is something desired, whether it is constant or changing, sinusoidal, whatever; everything is possible."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variables"
+        }
+    ], 
+    "ts503": [
+        1532360, 
+        {
+            "transcript": "and there is somebody who is trying to prevent that from happening. That is a disturbance."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variables"
+        }
+    ], 
+    "ts728": [
+        2087040
+    ], 
+    "ts372": [
+        1151040
+    ], 
+    "ts373": [
+        1152480, 
+        {
+            "transcript": "Disturbance Variable, and so on ?\" Here I have a specific question"
+        }
+    ], 
+    "ts370": [
+        1141100
+    ], 
+    "ts371": [
+        1142440, 
+        {
+            "transcript": "Given this system, we have to ask \"What is the Manipulated Variable,What is Controlled Variable,what is "
+        }, 
+        {
+            "question": "FocusingInformation"
+        }
+    ], 
+    "ts376": [
+        1171080
+    ], 
+    "ts377": [
+        1172600, 
+        {
+            "transcript": "You don't have to say it aloud. Don't say it"
+        }
+    ], 
+    "ts374": [
+        1155340
+    ], 
+    "ts375": [
+        1156380, 
+        {
+            "transcript": "Temperature of the process stream - at the exit is - you have to choose - 1, 2, or 3. Just hold up your hand so that I can see."
+        }, 
+        {
+            "question": "StimulatingThought"
+        }
+    ], 
+    "ts378": [
+        1174040
+    ], 
+    "ts379": [
+        1177480, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts278": [
+        862280, 
+        {
+            "transcript": "Let's formalize it. Controlled variable, CV - it's a variable to be controlled."
+        }, 
+        {
+            "define": "Controlled Variable : It is a variable that maintain at particular value."
+        }
+    ], 
+    "ts272": [
+        848720, 
+        {
+            "transcript": "The effort that you put in to achieve the required control. The other name associated with this is the manipulated variable. We will see some of this shortly."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "manipulated variable"
+        }
+    ], 
+    "ts270": [
+        846680
+    ], 
+    "ts276": [
+        859700
+    ], 
+    "ts275": [
+        858980, 
+        {
+            "transcript": "in the next lecture."
+        }
+    ], 
+    "ts274": [
+        857580
+    ], 
+    "ts439": [
+        1344400, 
+        {
+            "transcript": "Is that ok?"
+        }
+    ], 
+    "ts438": [
+        1343180
+    ], 
+    "ts793": [
+        2280320, 
+        {
+            "transcript": "I have"
+        }
+    ], 
+    "ts181": [
+        548860, 
+        {
+            "transcript": "It also becomes fixed. So you would say that one of the objectives of this system could be to maintain the height"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintain Height of Fluid"
+        }
+    ], 
+    "ts180": [
+        546840
+    ], 
+    "ts182": [
+        557820
+    ], 
+    "ts184": [
+        558900, 
+        {
+            "transcript": "of the fluid in the tank by adjusting the valve opening. Is that ok? It's a very simple process."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintain Height of Fluid"
+        }
+    ], 
+    "ts186": [
+        566000
+    ], 
+    "ts188": [
+        569360, 
+        {
+            "transcript": "We'll be discussing the single board heater system. In this course, we'll be studying it quite extensively. In fact, I passed it around in the last class, if you recall. This is the photograph of that."
+        }, 
+        {
+            "summary": "GeneralReview"
+        }, 
+        {
+            "diagram": "Plant in the Single Board Heater System"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Single Board Heater"
+        }
+    ], 
+    "ts471": [
+        1409240, 
+        {
+            "transcript": "It has gone to say 27 degrees."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts470": [
+        1407660
+    ], 
+    "ts473": [
+        1411800, 
+        {
+            "transcript": "So you want to cool it. Remember the knob, so you adjust it."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts436": [
+        1339800
+    ], 
+    "ts475": [
+        1416460, 
+        {
+            "transcript": "So in this case, it is the cold air flow rate. You might say, you increase the opening, so more cold air goes,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts474": [
+        1415320
+    ], 
+    "ts477": [
+        1426160, 
+        {
+            "transcript": "so that is the manipulated variable,"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable"
+        }
+    ], 
+    "ts476": [
+        1423500
+    ], 
+    "ts479": [
+        1432880, 
+        {
+            "transcript": "you can think of all of these as instantaneous values not over a period of time."
+        }
+    ], 
+    "ts478": [
+        1427440
+    ], 
+    "ts572": [
+        1731000
+    ], 
+    "ts568": [
+        1699120
+    ], 
+    "ts574": [
+        1735460
+    ], 
+    "ts575": [
+        1737520, 
+        {
+            "transcript": "AT is analyser."
+        }
+    ], 
+    "ts576": [
+        1738440
+    ], 
+    "ts577": [
+        1739500, 
+        {
+            "transcript": "Analyser, it gives the concentration."
+        }
+    ], 
+    "ts808": [
+        2306220, 
+        {
+            "transcript": "This is the single board heater system that you will be using, we have forty of them, so we have total of"
+        }
+    ], 
+    "ts778": [
+        2221880
+    ], 
+    "ts779": [
+        2223100, 
+        {
+            "transcript": "ok"
+        }
+    ], 
+    "ts776": [
+        2219900
+    ], 
+    "ts777": [
+        2221500, 
+        {
+            "transcript": "It has got. "
+        }
+    ], 
+    "ts774": [
+        2218000
+    ], 
+    "ts775": [
+        2219680, 
+        {
+            "transcript": "Ok"
+        }
+    ], 
+    "ts772": [
+        2215360
+    ], 
+    "ts773": [
+        2217120, 
+        {
+            "transcript": "Then you execute."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts770": [
+        2212260
+    ], 
+    "ts771": [
+        2213480, 
+        {
+            "transcript": "So, you selected then the code come."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts596": [
+        1779140
+    ], 
+    "ts594": [
+        1773860
+    ], 
+    "ts595": [
+        1775400, 
+        {
+            "transcript": "Ok,I would wanted you to go through this and we discuss it later."
+        }
+    ], 
+    "ts592": [
+        1770980
+    ], 
+    "ts593": [
+        1772000, 
+        {
+            "transcript": "second line here, the third line."
+        }
+    ], 
+    "ts590": [
+        1764620
+    ], 
+    "ts591": [
+        1767600, 
+        {
+            "transcript": "are to do with three lines here, one line here,"
+        }
+    ], 
+    "ts548": [
+        1628140
+    ], 
+    "ts598": [
+        1783600, 
+        {
+            "transcript": "This is an example of multi-variable system."
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Multi-variable System"
+        }
+    ], 
+    "ts699": [
+        2013800, 
+        {
+            "transcript": "Ok,so I don't have to spend  too much time on this."
+        }
+    ], 
+    "ts698": [
+        2012580
+    ], 
+    "ts694": [
+        2008120, 
+        {
+            "transcript": "Quickly Scilab,"
+        }
+    ], 
+    "ts697": [
+        2011380, 
+        {
+            "transcript": "have you been expose to Scilab?"
+        }
+    ], 
+    "ts696": [
+        2010060
+    ], 
+    "ts690": [
+        1989800, 
+        {
+            "transcript": "So, this is  main textbook Process Dynamics and Control by Seborg,Edgar & Mellichamp and my book Digital Control will be used to-wards end of the course, we will also use last year video courses"
+        }, 
+        {
+            "explain": "Reporting"
+        }, 
+        {
+            "topic": "Textbooks and References"
+        }
+    ], 
+    "ts692": [
+        2005860
+    ], 
+    "ts118": [
+        378700
+    ], 
+    "ts119": [
+        380300, 
+        {
+            "transcript": " you have a process stream."
+        }
+    ], 
+    "ts509": [
+        1553020, 
+        {
+            "transcript": "Is that ok?"
+        }
+    ], 
+    "ts508": [
+        1551740
+    ], 
+    "ts112": [
+        364940
+    ], 
+    "ts113": [
+        368720, 
+        {
+            "transcript": "As I told you, we will take up some examples processing samples,processes from chemical engineering."
+        }
+    ], 
+    "ts110": [
+        359740
+    ], 
+    "ts111": [
+        361220, 
+        {
+            "transcript": "A good process control engineer would try to attempt all of them."
+        }
+    ], 
+    "ts116": [
+        377160, 
+        {
+            "transcript": "This is the simplest thing you can think of"
+        }
+    ], 
+    "ts500": [
+        1523220
+    ], 
+    "ts114": [
+        374440
+    ], 
+    "ts502": [
+        1530940
+    ], 
+    "ts10": [
+        48380
+    ], 
+    "ts11": [
+        50420, 
+        {
+            "transcript": "We will discuss types of variables from control point of view - something fundamental"
+        }, 
+        {
+            "introduce": "Aims&Objectives"
+        }
+    ], 
+    "ts12": [
+        55480
+    ], 
+    "ts13": [
+        56820, 
+        {
+            "transcript": "And then we will talk about course organisation. So, let us get started with bird's eye view of Plant Operation. We will discuss"
+        }, 
+        {
+            "introduce": "Aims&Objectives"
+        }
+    ], 
+    "ts14": [
+        65239
+    ], 
+    "ts16": [
+        66460, 
+        {
+            "transcript": "plant operation at three levels. One is (at) the global plant level. For example - what to make, how much to make, what to sell, should you make more of diesel, or more of kerosene or more of petrol. So, these are"
+        }, 
+        {
+            "question": "FocusingInformation"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "introduce": "Aims&Objectives"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Global Plant Operation Level."
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Decision"
+        }
+    ], 
+    "ts18": [
+        86020
+    ], 
+    "ts19": [
+        87280, 
+        {
+            "transcript": "decisions that you have to make based on market prices, availability of crude - raw material, and what product is suitable for the given raw material"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Global Plant Operation Level."
+        }
+    ], 
+    "ts816": [
+        2318680, 
+        {
+            "transcript": "and we slots booking systems, you go book your slot to  do experiment on that."
+        }
+    ], 
+    "ts751": [
+        2163420, 
+        {
+            "transcript": "Ok"
+        }
+    ], 
+    "ts798": [
+        2292820
+    ], 
+    "ts814": [
+        2316420
+    ], 
+    "ts752": [
+        2163720
+    ], 
+    "ts753": [
+        2164880, 
+        {
+            "transcript": "So, here is Scilab on GARUDA Cloud , you can select  the Category."
+        }, 
+        {
+            "story": "Demo"
+        }, 
+        {
+            "storytitle": "Scilab on GARUDA"
+        }
+    ], 
+    "ts812": [
+        2314060, 
+        {
+            "transcript": "960 slots in a day"
+        }
+    ], 
+    "ts606": [
+        1809200
+    ], 
+    "ts457": [
+        1382980, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts604": [
+        1801480
+    ], 
+    "ts605": [
+        1804200, 
+        {
+            "transcript": "Here we have x1,variable stream has composition (x1) varying"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts602": [
+        1797100, 
+        {
+            "transcript": "go through this quickly,we mix two streams."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts600": [
+        1785440
+    ], 
+    "ts456": [
+        1381260
+    ], 
+    "ts810": [
+        2312680
+    ], 
+    "ts608": [
+        1813300
+    ], 
+    "ts609": [
+        1814460, 
+        {
+            "transcript": "Remember x1 is a feed composition and feed is a variable,disturbance you don't have any control on this so,its start fluctuating."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts454": [
+        1376880
+    ], 
+    "ts453": [
+        1371440, 
+        {
+            "transcript": "Does anybody want the explanation, the answer is correct. The answer is 2, It is the \"Manipulated Variable\"."
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts452": [
+        1370160
+    ], 
+    "ts451": [
+        1368480, 
+        {
+            "transcript": "this is the control effort that we put in."
+        }
+    ], 
+    "ts239": [
+        707440, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts238": [
+        705460
+    ], 
+    "ts237": [
+        696200, 
+        {
+            "transcript": "terms. Heat-flow, how does heat flow in and out? Outside weather, that's a good thing. Suddenly, it starts raining. Temperature may fall off. What else?"
+        }, 
+        {
+            "question": "StimulatingThought"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Heat-flow"
+        }
+    ], 
+    "ts236": [
+        694160
+    ], 
+    "ts235": [
+        694040, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts234": [
+        691760
+    ], 
+    "ts233": [
+        691320, 
+        {
+            "transcript": "in"
+        }
+    ], 
+    "ts232": [
+        689920
+    ], 
+    "ts231": [
+        689580, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts230": [
+        688500
+    ], 
+    "ts89": [
+        301560, 
+        {
+            "transcript": "Ok. Refrigeration"
+        }, 
+        {
+            "interaction": "Student Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Process"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Control Process - Refrigeration"
+        }
+    ], 
+    "ts88": [
+        295600
+    ], 
+    "ts607": [
+        1811300, 
+        {
+            "transcript": "but,I wanted to be at particular value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }
+    ], 
+    "ts83": [
+        282700, 
+        {
+            "transcript": "Thermostat? Ok. So, for example if you want to control the temperature of this room. If it is very hot, you want to cool it."
+        }, 
+        {
+            "interaction": "Student Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Control Process"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Control Process-Thermostat"
+        }
+    ], 
+    "ts82": [
+        279760
+    ], 
+    "ts81": [
+        278920, 
+        {
+            "transcript": "in your day-to-day life"
+        }
+    ], 
+    "ts80": [
+        277400
+    ], 
+    "ts87": [
+        295360, 
+        {
+            "transcript": "Sorry?"
+        }
+    ], 
+    "ts86": [
+        293640
+    ], 
+    "ts85": [
+        290900, 
+        {
+            "transcript": "Ok. So, that's fine. Any other example?"
+        }
+    ], 
+    "ts84": [
+        289340
+    ], 
+    "ts840": [
+        2370140
+    ], 
+    "ts282": [
+        871140, 
+        {
+            "transcript": "We wish to maintain this at a particular value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled variable"
+        }
+    ], 
+    "ts280": [
+        869360
+    ], 
+    "ts732": [
+        2098680, 
+        {
+            "transcript": "but people  with Scilab knowledge are in short  supply, may be useful to get jobs. People says \"unless you know Matlab you won't get job\", actually it's rather way out.If you know scilab its easier to get jobs,I also mentioned in last class it is useful to entrepreneurs, your investment cost is low and the for the end user  also it becomes lot cheaper to use your product."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Jobs in Scilab"
+        }
+    ], 
+    "ts730": [
+        2095980
+    ], 
+    "ts308": [
+        932220
+    ], 
+    "ts736": [
+        2124400, 
+        {
+            "transcript": "I would want you  visit Scilab.in -  it is run by us."
+        }
+    ], 
+    "ts734": [
+        2121700
+    ], 
+    "ts286": [
+        875440, 
+        {
+            "transcript": "Disturbance value variable is a variable that cause changes in the control variable."
+        }, 
+        {
+            "define": "Disturbance value variable : Disturbance value variable is a variable that cause changes in the control variable."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable."
+        }
+    ], 
+    "ts738": [
+        2128000
+    ], 
+    "ts300": [
+        921100
+    ], 
+    "ts307": [
+        931820, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts306": [
+        929960
+    ], 
+    "ts305": [
+        928600, 
+        {
+            "transcript": "something external to our system"
+        }
+    ], 
+    "ts304": [
+        927360
+    ], 
+    "ts657": [
+        1917060, 
+        {
+            "transcript": "I am not sure how much time I should spend on this?"
+        }
+    ], 
+    "ts706": [
+        2026020
+    ], 
+    "ts705": [
+        2023220, 
+        {
+            "transcript": "computational environment.Why it is amazing?"
+        }
+    ], 
+    "ts493": [
+        1484260, 
+        {
+            "transcript": "you might say that \"I want the temperature to change linearly.\""
+        }
+    ], 
+    "ts492": [
+        1482980
+    ], 
+    "ts491": [
+        1474280, 
+        {
+            "transcript": "have you done gas chromatograph? have you done thermal temperature programming? you might even say \"It need not be at a constant value\""
+        }
+    ], 
+    "ts490": [
+        1473020
+    ], 
+    "ts497": [
+        1513660, 
+        {
+            "transcript": "Of course, we take a simple thing saying that I want to change it to some other value, some constant value, but it is not required."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining Temperature at desired value."
+        }
+    ], 
+    "ts262": [
+        785700
+    ], 
+    "ts495": [
+        1489200, 
+        {
+            "transcript": "In a room temperature, you may not do that. you may not say that \"my body actually likes temperature to go up and down.\" you may not say that. But then here is a system that says \"I want to increase the temperature because something  will dissolve, after some point, I will hold it constant, then I will bring it down. because I want to cool it, bring it back to the room temperature.\" You might do all of this."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Maintaining Temperature at desired value."
+        }
+    ], 
+    "ts494": [
+        1487160
+    ], 
+    "ts499": [
+        1522360, 
+        {
+            "transcript": "Does this answer you question?"
+        }
+    ], 
+    "ts348": [
+        1071400
+    ], 
+    "ts702": [
+        2018440, 
+        {
+            "transcript": "I will skip this also, its a amazing"
+        }
+    ], 
+    "ts700": [
+        2015820
+    ], 
+    "ts540": [
+        1617620
+    ], 
+    "ts542": [
+        1619180, 
+        {
+            "transcript": "Manipulated variable is temperature or flow rate of the heating medium or cooling medium."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Manipulated Variable."
+        }
+    ], 
+    "ts544": [
+        1623100
+    ], 
+    "ts546": [
+        1626380, 
+        {
+            "transcript": "so, here is the distillation column."
+        }, 
+        {
+            "diagram": "Schematic of distillation Column"
+        }
+    ], 
+    "ts268": [
+        812340
+    ], 
+    "ts342": [
+        1054420
+    ], 
+    "ts787": [
+        2254680, 
+        {
+            "transcript": "change the book,ok so we will see later,but I think there is some configuration problem,I will ask people to correct the few things,this is live by the way as we take on inputs and so on,will go through this again but I can assure you this is minor problem its going to work."
+        }, 
+        {
+            "interaction": "Other"
+        }, 
+        {
+            "summary": "FuturePreview"
+        }
+    ], 
+    "ts786": [
+        2250900
+    ], 
+    "ts785": [
+        2250620, 
+        {
+            "transcript": "sorry"
+        }
+    ], 
+    "ts784": [
+        2249100
+    ], 
+    "ts398": [
+        1221580
+    ], 
+    "ts399": [
+        1222840, 
+        {
+            "transcript": "typically the feed to a process is something that you buy from somebody."
+        }, 
+        {
+            "define": "Feed to a Process : Feed to Process is something that you buy from somebody."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed to Process"
+        }
+    ], 
+    "ts428": [
+        1314620
+    ], 
+    "ts429": [
+        1316300, 
+        {
+            "transcript": "they have to accept it, whatever it is."
+        }
+    ], 
+    "ts394": [
+        1204880
+    ], 
+    "ts395": [
+        1208880, 
+        {
+            "transcript": "How many people feel it is two?"
+        }
+    ], 
+    "ts396": [
+        1210440
+    ], 
+    "ts397": [
+        1211900, 
+        {
+            "transcript": "We will  answer that, the answer is \"Disturbance variable\", of course,you can always say that I might change the temperature but remember"
+        }, 
+        {
+            "answer": "Answer"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Temperature of the process stream at the exit"
+        }
+    ], 
+    "ts390": [
+        1199880, 
+        {
+            "transcript": "Let's take the next thing."
+        }
+    ], 
+    "ts423": [
+        1278340, 
+        {
+            "transcript": "and there is a plant, lets say Reliance Jamnagar, actually and then it takes some whatever Libyan light or something, it processes, gives output"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Feed is procured from outside/market"
+        }
+    ], 
+    "ts392": [
+        1201440
+    ], 
+    "ts393": [
+        1202900, 
+        {
+            "transcript": "The temperature of the process stream at the inlet."
+        }, 
+        {
+            "question": "StimulatingThought"
+        }
+    ], 
+    "ts721": [
+        2055880, 
+        {
+            "transcript": "This is Martin. He says Scilab is now widely used in CNES. in various engineering fields, such as Telecommunications, RF analysis, Navigation, Altitude Control System analysis... and so on"
+        }, 
+        {
+            "explain": "Reporting"
+        }, 
+        {
+            "topic": "Various use of Scilab"
+        }
+    ], 
+    "ts162": [
+        506100
+    ], 
+    "ts648": [
+        1894240
+    ], 
+    "ts160": [
+        498200, 
+        {
+            "transcript": "You say that the objective of this system might be to mix two streams to get a desired concentration, right?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Mixing Process"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Mixing process."
+        }
+    ], 
+    "ts167": [
+        511300, 
+        {
+            "transcript": "Ok? So, here you might say that for various reasons I want to maintain the height at a particular value."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Flow System"
+        }
+    ], 
+    "ts166": [
+        509920
+    ], 
+    "ts164": [
+        507540, 
+        {
+            "transcript": "Another example is a flow system."
+        }, 
+        {
+            "diagram": "Flow System"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Flow System"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Mixing process.-Flow system."
+        }
+    ], 
+    "ts642": [
+        1884840, 
+        {
+            "transcript": "disturbance variable,I will not even take your poll, we discussed it quite a bit..., the temperature is similar"
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts169": [
+        519260, 
+        {
+            "transcript": "What about flow rate?"
+        }
+    ], 
+    "ts168": [
+        517980
+    ], 
+    "ts646": [
+        1894060, 
+        {
+            "transcript": "Ok."
+        }
+    ], 
+    "ts644": [
+        1891540
+    ], 
+    "ts720": [
+        2054780
+    ], 
+    "ts49": [
+        173345
+    ], 
+    "ts48": [
+        172835
+    ], 
+    "ts47": [
+        166840, 
+        {
+            "transcript": "Third level that you would - so in this case a possible tool is model predictive  control. It is very popular in process plants."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Variable Level"
+        }
+    ], 
+    "ts46": [
+        165660
+    ], 
+    "ts45": [
+        163740, 
+        {
+            "transcript": "Ok? This is at the next level"
+        }
+    ], 
+    "ts44": [
+        162640
+    ], 
+    "ts43": [
+        160420, 
+        {
+            "transcript": "So, these are based on rigorous models"
+        }
+    ], 
+    "ts42": [
+        159360
+    ], 
+    "ts41": [
+        155680, 
+        {
+            "transcript": "What should be the reflux ratio, what should be the temperature?"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Unit Level"
+        }, 
+        {
+            "story": "Example"
+        }, 
+        {
+            "storytitle": "Unit Level"
+        }
+    ], 
+    "ts40": [
+        153400
+    ], 
+    "ts264": [
+        799360
+    ], 
+    "ts265": [
+        801480, 
+        {
+            "transcript": "Disturbance is something that is happening from outside."
+        }, 
+        {
+            "define": "Disturbance"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts266": [
+        803920
+    ], 
+    "ts267": [
+        805080, 
+        {
+            "transcript": "Suddenly, the weather changes. We can't do anything about it. Suddenly, ten people come in. I can't be a dictator and say - \"You can't come\""
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable"
+        }
+    ], 
+    "ts260": [
+        769560
+    ], 
+    "ts261": [
+        770780, 
+        {
+            "transcript": "to remove the effects of disturbance variables to compensate for the changes introduced by the disturbance variables on the controlled variables. Controlled variable is what you achieve. This is what you want to maintain - controlled variable."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Controlled Variable "
+        }
+    ], 
+    "ts349": [
+        1072820, 
+        {
+            "transcript": null
+        }
+    ], 
+    "ts263": [
+        788080, 
+        {
+            "transcript": "We will actually use some other terms later. But, I'll formalize. I will not talk about this. For example, this manipulated variable is the effort that we put in to the system."
+        }, 
+        {
+            "define": "Manipulated variables :  manipulated variable is the effort that we put in to the system."
+        }, 
+        {
+            "answer": "Answer"
+        }
+    ], 
+    "ts347": [
+        1066940, 
+        {
+            "transcript": "or you can think of this as the cause and think of this as the effect."
+        }
+    ], 
+    "ts346": [
+        1065240
+    ], 
+    "ts345": [
+        1061620, 
+        {
+            "transcript": "These are input variables, these are the output variables."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance, Manipulated variables, Controlled variable"
+        }
+    ], 
+    "ts344": [
+        1060260
+    ], 
+    "ts343": [
+        1055800, 
+        {
+            "transcript": "coolant air flow rate - I increased it. So the temperature is going to fall."
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance, Manipulated variables, Controlled variable"
+        }
+    ], 
+    "ts269": [
+        813720, 
+        {
+            "transcript": "But, a more fair system will be to say that \"Look, they have to come. I'll adjust it somehow\". So, these disturbance variables refer to things that are not at your disposal, whereas the manipulated variable is something that you can work with, or modify. There is some cost associated with that. If I put in more cold air, I have to spend some money."
+        }, 
+        {
+            "define": "Disturbance Variable : disturbance variables refer to things that are not at your disposal"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance Variable,Manipulated Variable"
+        }
+    ], 
+    "ts341": [
+        1053440, 
+        {
+            "transcript": "I change the"
+        }, 
+        {
+            "explain": "Describing&Interpreting"
+        }, 
+        {
+            "topic": "Disturbance, Manipulated variables, Controlled variable"
+        }
+    ], 
+    "ts340": [
+        1052260
+    ], 
+    "ts744": [
+        2146620
+    ], 
+    "ts688": [
+        1987200
+    ], 
     "a937": "ts1", 
-    "ts3": {
-        "transcript": {
-            "a938": "I am delighted to begin the first formal lecture in this course."
-        }
-    }, 
     "a938": "ts3", 
-    "ts5": {
-        "transcript": {
-            "a939": "In this lecture we will give a brief overview of what process control is"
-        }, 
-        "introduce": {
-            "a1412": "Aims&Objectives"
-        }
-    }, 
     "a939": "ts5", 
-    "ts8": {
-        "transcript": {
-            "a940": "We will discuss some examples"
-        }
-    }, 
     "a940": "ts8", 
-    "ts11": {
-        "transcript": {
-            "a941": "We will discuss types of variables from control point of view - something fundamental"
-        }, 
-        "introduce": {
-            "a1413": "Aims&Objectives"
-        }
-    }, 
     "a941": "ts11", 
-    "ts13": {
-        "transcript": {
-            "a942": "And then we will talk about course organisation. So, let us get started with bird's eye view of Plant Operation. We will discuss"
-        }, 
-        "introduce": {
-            "a1414": "Aims&Objectives"
-        }
-    }, 
     "a942": "ts13", 
-    "ts16": {
-        "transcript": {
-            "a943": "plant operation at three levels. One is (at) the global plant level. For example - what to make, how much to make, what to sell, should you make more of diesel, or more of kerosene or more of petrol. So, these are"
-        }, 
-        "question": {
-            "a1294": "FocusingInformation"
-        }, 
-        "answer": {
-            "a1316": "Answer"
-        }, 
-        "introduce": {
-            "a1415": "Aims&Objectives"
-        }, 
-        "explain": {
-            "a1435": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1553": "Global Plant Operation Level."
-        }, 
-        "story": {
-            "a1346": "Example"
-        }, 
-        "storytitle": {
-            "a1379": "Decision"
-        }
-    }, 
     "a943": "ts16", 
-    "ts19": {
-        "transcript": {
-            "a944": "decisions that you have to make based on market prices, availability of crude - raw material, and what product is suitable for the given raw material"
-        }, 
-        "explain": {
-            "a1436": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1554": "Global Plant Operation Level."
-        }
-    }, 
     "a944": "ts19", 
-    "ts21": {
-        "transcript": {
-            "a945": "These are done through linear programming. You might even have to predict what will happen after three months, two months - should I procure them right now. So, the linear programming problem can actually take care of"
-        }, 
-        "explain": {
-            "a1437": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1555": " Decisions through Linear Programming"
-        }
-    }, 
     "a945": "ts21", 
-    "ts23": {
-        "transcript": {
-            "a946": "client's profit in the next - for example - two months, three months. You might also have to project the selling price, let's say one week from now."
-        }, 
-        "story": {
-            "a1347": "Example"
-        }, 
-        "storytitle": {
-            "a1380": "Clients Profit "
-        }
-    }, 
     "a946": "ts23", 
-    "ts25": {
-        "transcript": {
-            "a947": "So, there are some modelling issues"
-        }
-    }, 
     "a947": "ts25", 
-    "ts27": {
-        "transcript": {
-            "a948": "There's quite a bit of linear programming involved"
-        }
-    }, 
     "a948": "ts27", 
-    "ts29": {
-        "transcript": {
-            "a949": "These often work with approximate models, ok?"
-        }
-    }, 
     "a949": "ts29", 
-    "ts31": {
-        "transcript": {
-            "a950": "It is done at the plant level - what to do, and so on."
-        }
-    }, 
     "a950": "ts31", 
-    "ts33": {
-        "transcript": {
-            "a951": "The next level is at the unit level"
-        }, 
-        "explain": {
-            "a1438": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1556": "Unit Level"
-        }
-    }, 
     "a951": "ts33", 
-    "ts36": {
-        "transcript": {
-            "a952": "For example"
-        }, 
-        "story": {
-            "a1348": "Example"
-        }, 
-        "storytitle": {
-            "a1381": "Unit Level"
-        }
-    }, 
     "a952": "ts36", 
-    "ts39": {
-        "transcript": {
-            "a953": "What should be the flow rate?"
-        }, 
-        "explain": {
-            "a1439": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1557": "Unit Level"
-        }, 
-        "story": {
-            "a1349": "Example"
-        }, 
-        "storytitle": {
-            "a1382": "Unit Level"
-        }
-    }, 
     "a953": "ts39", 
-    "ts41": {
-        "transcript": {
-            "a954": "What should be the reflux ratio, what should be the temperature?"
-        }, 
-        "explain": {
-            "a1440": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1558": "Unit Level"
-        }, 
-        "story": {
-            "a1350": "Example"
-        }, 
-        "storytitle": {
-            "a1383": "Unit Level"
-        }
-    }, 
     "a954": "ts41", 
-    "ts43": {
-        "transcript": {
-            "a955": "So, these are based on rigorous models"
-        }
-    }, 
     "a955": "ts43", 
-    "ts45": {
-        "transcript": {
-            "a956": "Ok? This is at the next level"
-        }
-    }, 
     "a956": "ts45", 
-    "ts47": {
-        "transcript": {
-            "a957": "Third level that you would - so in this case a possible tool is model predictive  control. It is very popular in process plants."
-        }, 
-        "explain": {
-            "a1441": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1559": "Variable Level"
-        }
-    }, 
     "a957": "ts47", 
-    "ts51": {
-        "transcript": {
-            "a958": "Once you figure out where you want to keep these, then the next question is - how do you do that. I want the temperature to be at 98 degrees Celsius. How do I do that. Right?"
-        }, 
-        "question": {
-            "a1295": "FocusingInformation"
-        }
-    }, 
     "a958": "ts51", 
-    "ts54": {
-        "transcript": {
-            "a959": "So, that is at the variable level. Achieving intended levels. How to get a specified flow rate, etc. A possible tool is PID control"
-        }, 
-        "question": {
-            "a1296": "FocusingInformation"
-        }, 
-        "answer": {
-            "a1317": "Answer"
-        }, 
-        "explain": {
-            "a1442": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1560": "Variable Level"
-        }
-    }, 
     "a959": "ts54", 
-    "ts57": {
-        "transcript": {
-            "a960": "In fact, we will be spending most of our time in this course in the last one. Given that you want to maintain something at a particular value, how do you do that? Ok? So, we will look at the basics of that, different tools for that. Although this may seem very simple"
-        }
-    }, 
     "a960": "ts57", 
-    "ts61": {
-        "transcript": {
-            "a961": "It is something very fundamental. So, the tools that are developed convey a lot of important ideas, principles. So we understand them. We'll spend quite a bit of time in understanding these in this"
-        }
-    }, 
     "a961": "ts61", 
-    "ts64": {
-        "transcript": {
-            "a962": "Then, we ask this question, what is process control?"
-        }, 
-        "question": {
-            "a1297": "FocusingInformation"
-        }, 
-        "explain": {
-            "a1443": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1561": "Process Control"
-        }
-    }, 
     "a962": "ts64", 
-    "ts67": {
-        "transcript": {
-            "a963": "It is an area that deals with control of processes"
-        }, 
-        "define": {
-            "a1672": "Process Control:It deals with the control of processes"
-        }, 
-        "answer": {
-            "a1318": "Answer"
-        }
-    }, 
     "a963": "ts67", 
-    "ts69": {
-        "transcript": {
-            "a964": "The objective is maintaining variables at desired values"
-        }, 
-        "explain": {
-            "a1444": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1562": "Maintaining Variable"
-        }
-    }, 
     "a964": "ts69", 
-    "ts71": {
-        "transcript": {
-            "a965": "If there is a deviation"
-        }
-    }, 
     "a965": "ts71", 
-    "ts73": {
-        "transcript": {
-            "a966": "Manipulate some other quantity"
-        }
-    }, 
     "a966": "ts73", 
-    "ts75": {
-        "transcript": {
-            "a967": "Give an example, anyone?"
-        }
-    }, 
     "a967": "ts75", 
-    "ts77": {
-        "transcript": {
-            "a968": "Example of a control process that you might"
-        }, 
-        "explain": {
-            "a1445": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1563": "Control Process"
-        }, 
-        "story": {
-            "a1351": "Example"
-        }, 
-        "storytitle": {
-            "a1384": "Control Process"
-        }
-    }, 
     "a968": "ts77", 
-    "ts79": {
-        "transcript": {
-            "a969": "come across"
-        }
-    }, 
     "a969": "ts79", 
-    "ts81": {
-        "transcript": {
-            "a970": "in your day-to-day life"
-        }
-    }, 
     "a970": "ts81", 
-    "ts83": {
-        "transcript": {
-            "a971": "Thermostat? Ok. So, for example if you want to control the temperature of this room. If it is very hot, you want to cool it."
-        }, 
-        "interaction": {
-            "a1425": "Student Answer"
-        }, 
-        "explain": {
-            "a1446": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1564": "Control Process"
-        }, 
-        "story": {
-            "a1352": "Example"
-        }, 
-        "storytitle": {
-            "a1385": "Control Process-Thermostat"
-        }
-    }, 
     "a971": "ts83", 
-    "ts85": {
-        "transcript": {
-            "a972": "Ok. So, that's fine. Any other example?"
-        }
-    }, 
     "a972": "ts85", 
-    "ts87": {
-        "transcript": {
-            "a973": "Sorry?"
-        }
-    }, 
     "a973": "ts87", 
-    "ts89": {
-        "transcript": {
-            "a974": "Ok. Refrigeration"
-        }, 
-        "interaction": {
-            "a1426": "Student Answer"
-        }, 
-        "explain": {
-            "a1447": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1565": "Control Process"
-        }, 
-        "story": {
-            "a1354": "Example"
-        }, 
-        "storytitle": {
-            "a1387": "Control Process - Refrigeration"
-        }
-    }, 
     "a974": "ts89", 
-    "ts91": {
-        "transcript": {
-            "a975": "Fair enough"
-        }
-    }, 
     "a975": "ts91", 
-    "ts93": {
-        "transcript": {
-            "a976": "So, we will see some more examples of such"
-        }
-    }, 
     "a976": "ts93", 
-    "ts95": {
-        "transcript": {
-            "a977": "application in this lecture - from process control."
-        }
-    }, 
     "a977": "ts95", 
     "ts98": {
-        "transcript": {
-            "a978": "What are the benefits? Why do we do this?"
-        }, 
-        "question": {
-            "a1298": "FocusingInformation"
-        }, 
-        "answer": {
-            "a1319": "Answer"
-        }, 
-        "explain": {
-            "a1448": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1566": "Benefits of Process Control"
-        }
+        "transcript": "What are the benefits? Why do we do this?", 
+        "question": "FocusingInformation", 
+        "answer": "Answer", 
+        "explain": "Describing&Interpreting", 
+        "topic": "Benefits of Process Control"
     }, 
     "a978": "ts98", 
-    "ts103": {
-        "transcript": {
-            "a979": "The first and foremost is the safety"
-        }
-    }, 
     "a979": "ts103", 
-    "ts105": {
-        "transcript": {
-            "a980": "You don't want the plant to blow up. You don't want tubes to burst and send away poisonous liquids or things like that"
-        }, 
-        "explain": {
-            "a1449": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1567": "Benefits of Process Control"
-        }
-    }, 
     "a980": "ts105", 
-    "ts107": {
-        "transcript": {
-            "a981": "Second one, of course, is subject to safety, maximising the profit. And, then, of course, being good to the environment"
-        }, 
-        "explain": {
-            "a1450": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1568": "Benefits of Process Control"
-        }
-    }, 
     "a981": "ts107", 
-    "ts109": {
-        "transcript": {
-            "a982": "reducing  the effluence and so on. These are all logical kinds of things. But, we try to achieve all of these in this course."
-        }, 
-        "explain": {
-            "a1451": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1569": "Benefits of Process Control Subject to Safety."
-        }
-    }, 
     "a982": "ts109", 
-    "ts111": {
-        "transcript": {
-            "a983": "A good process control engineer would try to attempt all of them."
-        }
-    }, 
     "a983": "ts111", 
-    "ts113": {
-        "transcript": {
-            "a984": "As I told you, we will take up some examples processing samples,processes from chemical engineering."
-        }
-    }, 
     "a984": "ts113", 
-    "ts116": {
-        "transcript": {
-            "a985": "This is the simplest thing you can think of"
-        }
-    }, 
     "a985": "ts116", 
-    "ts119": {
-        "transcript": {
-            "a986": " you have a process stream."
-        }
-    }, 
     "a986": "ts119", 
-    "ts121": {
-        "transcript": {
-            "a987": "You want to bring it to a particular temperature. Ok? So you pre-heat before this stream enters"
-        }, 
-        "explain": {
-            "a1452": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1570": "Heat the Process Stream"
-        }
-    }, 
     "a987": "ts121", 
-    "ts123": {
-        "transcript": {
-            "a988": "your tank or your vessel, your reactor column - whatever it is. Whatever you do prior to that also has an objective. You want to bring it to some particular temperature. Right?"
-        }, 
-        "explain": {
-            "a1453": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1571": "Process Stream"
-        }
-    }, 
     "a988": "ts123", 
-    "ts126": {
-        "transcript": {
-            "a989": "So, distillation columns you're familiar with."
-        }, 
-        "diagram": {
-            "a1417": "Distillation Column"
-        }
-    }, 
     "a989": "ts126", 
-    "ts129": {
-        "transcript": {
-            "a990": null
-        }
-    }, 
     "a990": "ts129", 
-    "ts131": {
-        "transcript": {
-            "a991": "We will not spend too much time on this. You have a feed entering here and then you have a distillate"
-        }
-    }, 
     "a991": "ts131", 
-    "ts133": {
-        "transcript": {
-            "a992": "going at the top, bottoms - then you heat in the re-boiler."
-        }, 
-        "explain": {
-            "a1454": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1572": "Distillation column"
-        }
-    }, 
     "a992": "ts133", 
-    "ts135": {
-        "transcript": {
-            "a993": "You cool in the condenser"
-        }, 
-        "explain": {
-            "a1455": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1573": "Distillation column"
-        }
-    }, 
     "a993": "ts135", 
-    "ts137": {
-        "transcript": {
-            "a994": "So, many of these things are there and there are associated variables"
-        }
-    }, 
     "a994": "ts137", 
-    "ts139": {
-        "transcript": {
-            "a995": "processes  and so on,"
-        }
-    }, 
     "a995": "ts139", 
-    "ts141": {
-        "transcript": {
-            "a996": "we'll come back to this shortly"
-        }
-    }, 
     "a996": "ts141", 
-    "ts144": {
-        "transcript": {
-            "a997": "For example, here we may want to maintain the compositions at desired value"
-        }, 
-        "explain": {
-            "a1456": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1574": "Distillation"
-        }, 
-        "story": {
-            "a1355": "Example"
-        }, 
-        "storytitle": {
-            "a1388": "maintain the compositions at desired value"
-        }
-    }, 
     "a997": "ts144", 
-    "ts147": {
-        "transcript": {
-            "a998": "Ok?"
-        }
-    }, 
     "a998": "ts147", 
-    "ts149": {
-        "transcript": {
-            "a999": "The design is already given in the process. Somebody has already designed. He has already told \"I have done some optimization\" The distillate should be maintained at, whatever, 99.5 degrees"
-        }, 
-        "explain": {
-            "a1457": "Recounting"
-        }, 
-        "topic": {
-            "a1575": "Distillation"
-        }
-    }, 
     "a999": "ts149", 
-    "ts151": {
-        "transcript": {
-            "a1000": "It's already given. So we're not talking about that. How to achieve that, what is the correct value - we are not talking about that. But, given the correct value - how to achieve it, how to maintain it at that value - that is what we're going to discuss. So, that is why we say - maintain compositions at desired value."
-        }, 
-        "explain": {
-            "a1458": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1576": "Maintain Compositions at Desired Value."
-        }
-    }, 
     "a1000": "ts151", 
-    "ts153": {
-        "transcript": {
-            "a1001": null
-        }
-    }, 
     "a1001": "ts153", 
-    "ts156": {
-        "transcript": {
-            "a1002": "We have a mixing process. You may want to produce two streams or produce a specific output, which you might use elsewhere, for example."
-        }, 
-        "diagram": {
-            "a1418": "Mixing Process"
-        }, 
-        "explain": {
-            "a1459": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1577": "Mixing Process"
-        }, 
-        "story": {
-            "a1356": "Example"
-        }, 
-        "storytitle": {
-            "a1389": "Producing specific output from mixing process"
-        }
-    }, 
     "a1002": "ts156", 
-    "ts160": {
-        "transcript": {
-            "a1003": "You say that the objective of this system might be to mix two streams to get a desired concentration, right?"
-        }, 
-        "explain": {
-            "a1460": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1578": "Mixing Process"
-        }, 
-        "story": {
-            "a1357": "Example"
-        }, 
-        "storytitle": {
-            "a1390": "Mixing process."
-        }
-    }, 
     "a1003": "ts160", 
-    "ts164": {
-        "transcript": {
-            "a1004": "Another example is a flow system."
-        }, 
-        "diagram": {
-            "a1419": "Flow System"
-        }, 
-        "explain": {
-            "a1461": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1579": "Flow System"
-        }, 
-        "story": {
-            "a1358": "Example"
-        }, 
-        "storytitle": {
-            "a1391": "Mixing process.-Flow system."
-        }
-    }, 
     "a1004": "ts164", 
-    "ts167": {
-        "transcript": {
-            "a1005": "Ok? So, here you might say that for various reasons I want to maintain the height at a particular value."
-        }, 
-        "explain": {
-            "a1462": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1580": "Flow System"
-        }
-    }, 
     "a1005": "ts167", 
-    "ts169": {
-        "transcript": {
-            "a1006": "What about flow rate?"
-        }
-    }, 
     "a1006": "ts169", 
-    "ts171": {
-        "transcript": {
-            "a1007": "Before that, what is x?"
-        }, 
-        "question": {
-            "a1299": "FocusingInformation"
-        }
-    }, 
     "a1007": "ts171", 
-    "ts173": {
-        "transcript": {
-            "a1008": "x refers to the valve opening"
-        }, 
-        "answer": {
-            "a1320": "Answer"
-        }, 
-        "explain": {
-            "a1463": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1581": "Valve Opening (x)"
-        }
-    }, 
     "a1008": "ts173", 
-    "ts175": {
-        "transcript": {
-            "a1009": "Now we have assumed a very simple model."
-        }
-    }, 
     "a1009": "ts175", 
-    "ts177": {
-        "transcript": {
-            "a1010": "Right? Valve opening or valve position or something like that. And, we say that outflow is proportional to the height and valve opening."
-        }, 
-        "explain": {
-            "a1464": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1582": "Valve Opening (x)"
-        }
-    }, 
     "a1010": "ts177", 
-    "ts179": {
-        "transcript": {
-            "a1011": "If these two are fixed, what happens to the flow?"
-        }, 
-        "question": {
-            "a1300": "FocusingInformation"
-        }, 
-        "explain": {
-            "a1465": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1583": "Flow"
-        }
-    }, 
     "a1011": "ts179", 
-    "ts181": {
-        "transcript": {
-            "a1012": "It also becomes fixed. So you would say that one of the objectives of this system could be to maintain the height"
-        }, 
-        "explain": {
-            "a1466": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1584": "Maintain Height of Fluid"
-        }
-    }, 
     "a1012": "ts181", 
-    "ts184": {
-        "transcript": {
-            "a1013": "of the fluid in the tank by adjusting the valve opening. Is that ok? It's a very simple process."
-        }, 
-        "explain": {
-            "a1467": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1585": "Maintain Height of Fluid"
-        }
-    }, 
     "a1013": "ts184", 
-    "ts188": {
-        "transcript": {
-            "a1014": "We'll be discussing the single board heater system. In this course, we'll be studying it quite extensively. In fact, I passed it around in the last class, if you recall. This is the photograph of that."
-        }, 
-        "summary": {
-            "a1337": "GeneralReview"
-        }, 
-        "diagram": {
-            "a1420": "Plant in the Single Board Heater System"
-        }, 
-        "explain": {
-            "a1468": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1586": "Single Board Heater"
-        }
-    }, 
     "a1014": "ts188", 
-    "ts192": {
-        "transcript": {
-            "a1015": "What we do here is - you maintain the temperature of the plant."
-        }, 
-        "explain": {
-            "a1469": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1587": "Maintaining  Temperature"
-        }
-    }, 
     "a1015": "ts192", 
-    "ts195": {
-        "transcript": {
-            "a1016": "The plant is a small blade. We try to maintain it's temperature by heating"
-        }, 
-        "explain": {
-            "a1470": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1588": "Maintaining  Temperature"
-        }
-    }, 
     "a1016": "ts195", 
-    "ts197": {
-        "transcript": {
-            "a1017": "with a heater or cooling with a fan."
-        }, 
-        "explain": {
-            "a1471": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1589": "Maintaining  Temperature"
-        }
-    }, 
     "a1017": "ts197", 
-    "ts200": {
-        "transcript": {
-            "a1018": "It's a very simple thing and here is the photograph."
-        }
-    }, 
     "a1018": "ts200", 
-    "ts204": {
-        "transcript": {
-            "a1019": "We will "
-        }
-    }, 
     "a1019": "ts204", 
-    "ts207": {
-        "transcript": {
-            "a1020": "use the words \"process\" and \"system\" interchangeably in this course. Normally, we use the word \"process\" in Chemical Engineering courses. But, in Control systems area, people generally call it a system."
-        }
-    }, 
     "a1020": "ts207", 
-    "ts209": {
-        "transcript": {
-            "a1021": "So, because of that, we'll use both words in an interchangeable manner."
-        }
-    }, 
     "a1021": "ts209", 
-    "ts212": {
-        "transcript": {
-            "a1022": "From control perspective, these are some of the variables that we will deal with."
-        }, 
-        "diagram": {
-            "a1421": "Variables from Control Perspective"
-        }
-    }, 
     "a1022": "ts212", 
-    "ts215": {
-        "transcript": {
-            "a1023": null
-        }
-    }, 
     "a1023": "ts215", 
-    "ts217": {
-        "transcript": {
-            "a1024": "There is a disturbance variable."
-        }, 
-        "explain": {
-            "a1472": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1590": "variables from Control Perspective"
-        }
-    }, 
     "a1024": "ts217", 
-    "ts219": {
-        "transcript": {
-            "a1025": null
-        }
-    }, 
     "a1025": "ts219", 
-    "ts221": {
-        "transcript": {
-            "a1026": "There is a controlled variable. So, as I said, this is a system or a process. It could be a reactor, it could be a column, it could be a heater, it could be an exchange process, flow control system, whatever that is."
-        }, 
-        "explain": {
-            "a1473": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1591": "Variable from Control Perspective"
-        }
-    }, 
     "a1026": "ts221", 
-    "ts223": {
-        "transcript": {
-            "a1027": "Here is something that you want to achieve. What is it that you want to achieve? You want to control something. You want to maintain something at a specific value. Thermostat, for example or a room temperature control, for example. You want to maintain the room at a particular temperature. So, that becomes a controlled variable. "
-        }, 
-        "explain": {
-            "a1474": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1592": "Controlled variable"
-        }, 
-        "story": {
-            "a1359": "Example"
-        }, 
-        "storytitle": {
-            "a1392": "Thermostat"
-        }
-    }, 
     "a1027": "ts223", 
-    "ts225": {
-        "transcript": {
-            "a1028": null
-        }
-    }, 
     "a1028": "ts225", 
-    "ts227": {
-        "transcript": {
-            "a1029": "Can somebody point out what the disturbance is in a room temperature control?"
-        }, 
-        "question": {
-            "a1301": "StimulatingThought"
-        }
-    }, 
     "a1029": "ts227", 
-    "ts229": {
-        "transcript": {
-            "a1030": "Heat flows, in more"
-        }, 
-        "answer": {
-            "a1321": "Answer"
-        }, 
-        "interaction": {
-            "a1427": "Student Answer"
-        }
-    }, 
     "a1030": "ts229", 
-    "ts231": {
-        "transcript": {
-            "a1031": null
-        }
-    }, 
     "a1031": "ts231", 
-    "ts233": {
-        "transcript": {
-            "a1032": "in"
-        }
-    }, 
     "a1032": "ts233", 
-    "ts235": {
-        "transcript": {
-            "a1033": null
-        }
-    }, 
     "a1033": "ts235", 
-    "ts237": {
-        "transcript": {
-            "a1034": "terms. Heat-flow, how does heat flow in and out? Outside weather, that's a good thing. Suddenly, it starts raining. Temperature may fall off. What else?"
-        }, 
-        "question": {
-            "a1302": "StimulatingThought"
-        }, 
-        "answer": {
-            "a1322": "Answer"
-        }, 
-        "interaction": {
-            "a1428": "Student Answer"
-        }, 
-        "explain": {
-            "a1475": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1593": "Heat-flow"
-        }
-    }, 
     "a1034": "ts237", 
-    "ts239": {
-        "transcript": {
-            "a1035": null
-        }
-    }, 
     "a1035": "ts239", 
-    "ts241": {
-        "transcript": {
-            "a1036": null
-        }
-    }, 
     "a1036": "ts241", 
-    "ts243": {
-        "transcript": {
-            "a1037": null
-        }
-    }, 
     "a1037": "ts243", 
-    "ts245": {
-        "transcript": {
-            "a1038": "Different people. In fact, these are some things that are difficult to model. "
-        }, 
-        "interaction": {
-            "a1429": "Student Answer"
-        }
-    }, 
     "a1038": "ts245", 
-    "ts247": {
-        "transcript": {
-            "a1039": "What about people coming in and going out?"
-        }, 
-        "question": {
-            "a1303": "FocusingInformation"
-        }
-    }, 
     "a1039": "ts247", 
-    "ts249": {
-        "transcript": {
-            "a1040": "Suddenly, ten people come in and leave the door open. So, there are many such things that can happen."
-        }, 
-        "answer": {
-            "a1323": "Answer"
-        }, 
-        "explain": {
-            "a1476": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1594": "Disturbance Variable"
-        }
-    }, 
     "a1040": "ts249", 
-    "ts251": {
-        "transcript": {
-            "a1041": "These are all disturbance variables."
-        }, 
-        "explain": {
-            "a1477": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1595": "Disturbance Variable"
-        }
-    }, 
     "a1041": "ts251", 
-    "ts253": {
-        "transcript": {
-            "a1042": "You want to maintain the temperature at a particular value. So, what is the manipulated variable?"
-        }, 
-        "question": {
-            "a1304": "FocusingInformation"
-        }
-    }, 
     "a1042": "ts253", 
-    "ts255": {
-        "transcript": {
-            "a1043": "Current supplied to the heater or the refrigeration system or the valve that sends cold air. You send more or less cold air, depending on the temperature. If the temperature goes up, you might do something.If you know lot of people going to come, after all you can make it at lower value."
-        }, 
-        "explain": {
-            "a1478": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1596": "Maintain Temperature at particular value"
-        }
-    }, 
     "a1043": "ts255", 
-    "ts257": {
-        "transcript": {
-            "a1044": null
-        }
-    }, 
     "a1044": "ts257", 
-    "ts259": {
-        "transcript": {
-            "a1045": "To formalize that, manipulated variables are adjusted"
-        }, 
-        "explain": {
-            "a1479": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1597": "Manipulated Variable "
-        }
-    }, 
     "a1045": "ts259", 
-    "ts261": {
-        "transcript": {
-            "a1046": "to remove the effects of disturbance variables to compensate for the changes introduced by the disturbance variables on the controlled variables. Controlled variable is what you achieve. This is what you want to maintain - controlled variable."
-        }, 
-        "explain": {
-            "a1480": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1598": "Controlled Variable "
-        }
-    }, 
     "a1046": "ts261", 
-    "ts263": {
-        "transcript": {
-            "a1047": "We will actually use some other terms later. But, I'll formalize. I will not talk about this. For example, this manipulated variable is the effort that we put in to the system."
-        }, 
-        "define": {
-            "a1283": "Manipulated variables :  manipulated variable is the effort that we put in to the system."
-        }, 
-        "answer": {
-            "a1324": "Answer"
-        }
-    }, 
     "a1047": "ts263", 
-    "ts265": {
-        "transcript": {
-            "a1048": "Disturbance is something that is happening from outside."
-        }, 
-        "define": {
-            "a1284": "Disturbance"
-        }, 
-        "explain": {
-            "a1481": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1599": "Disturbance Variable"
-        }
-    }, 
     "a1048": "ts265", 
-    "ts267": {
-        "transcript": {
-            "a1049": "Suddenly, the weather changes. We can't do anything about it. Suddenly, ten people come in. I can't be a dictator and say - \"You can't come\""
-        }, 
-        "explain": {
-            "a1482": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1600": "Disturbance Variable"
-        }
-    }, 
     "a1049": "ts267", 
-    "ts269": {
-        "transcript": {
-            "a1050": "But, a more fair system will be to say that \"Look, they have to come. I'll adjust it somehow\". So, these disturbance variables refer to things that are not at your disposal, whereas the manipulated variable is something that you can work with, or modify. There is some cost associated with that. If I put in more cold air, I have to spend some money."
-        }, 
-        "define": {
-            "a1285": "Disturbance Variable : disturbance variables refer to things that are not at your disposal"
-        }, 
-        "explain": {
-            "a1483": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1601": "Disturbance Variable,Manipulated Variable"
-        }
-    }, 
     "a1050": "ts269", 
-    "ts272": {
-        "transcript": {
-            "a1051": "The effort that you put in to achieve the required control. The other name associated with this is the manipulated variable. We will see some of this shortly."
-        }, 
-        "explain": {
-            "a1484": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1602": "manipulated variable"
-        }
-    }, 
     "a1051": "ts272", 
-    "ts275": {
-        "transcript": {
-            "a1052": "in the next lecture."
-        }
-    }, 
     "a1052": "ts275", 
-    "ts278": {
-        "transcript": {
-            "a1053": "Let's formalize it. Controlled variable, CV - it's a variable to be controlled."
-        }, 
-        "define": {
-            "a1286": "Controlled Variable : It is a variable that maintain at particular value."
-        }
-    }, 
     "a1053": "ts278", 
-    "ts282": {
-        "transcript": {
-            "a1054": "We wish to maintain this at a particular value."
-        }, 
-        "explain": {
-            "a1485": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1603": "Controlled variable"
-        }
-    }, 
     "a1054": "ts282", 
-    "ts286": {
-        "transcript": {
-            "a1055": "Disturbance value variable is a variable that cause changes in the control variable."
-        }, 
-        "define": {
-            "a1287": "Disturbance value variable : Disturbance value variable is a variable that cause changes in the control variable."
-        }, 
-        "explain": {
-            "a1486": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1604": "Disturbance Variable."
-        }
-    }, 
     "a1055": "ts286", 
-    "ts289": {
-        "transcript": {
-            "a1056": null
-        }
-    }, 
     "a1056": "ts289", 
-    "ts291": {
-        "transcript": {
-            "a1057": "In fact, here I should point out - supposing there is no disturbance at all in the "
-        }
-    }, 
     "a1057": "ts291", 
-    "ts293": {
-        "transcript": {
-            "a1058": "we don't need to control the system at all. You bring it to some value and just maintain it."
-        }
-    }, 
     "a1058": "ts293", 
-    "ts295": {
-        "transcript": {
-            "a1059": "You don't need to measure anything. You know that there will be no change."
-        }
-    }, 
     "a1059": "ts295", 
-    "ts297": {
-        "transcript": {
-            "a1060": "Weather will not change. People will not come in and go out. Their heat generation is the same. If you know all that, then you say, \"I will set the thermostat at this value. It will always.."
-        }
-    }, 
     "a1060": "ts297", 
-    "ts299": {
-        "transcript": {
-            "a1061": "because of that disturbance value, we need to study the course on control."
-        }, 
-        "introduce": {
-            "a1416": "Motivation"
-        }
-    }, 
     "a1061": "ts299", 
-    "ts302": {
-        "transcript": {
-            "a1062": "But, it is important to remember that we have no handle on this. We cannot touch"
-        }
-    }, 
     "a1062": "ts302", 
-    "ts305": {
-        "transcript": {
-            "a1063": "something external to our system"
-        }
-    }, 
     "a1063": "ts305", 
-    "ts307": {
-        "transcript": {
-            "a1064": null
-        }
-    }, 
     "a1064": "ts307", 
-    "ts310": {
-        "transcript": {
-            "a1065": "and manipulated variable is a variable that can offset."
-        }
-    }, 
     "a1065": "ts310", 
-    "ts313": {
-        "transcript": {
-            "a1066": "Disturbance variable, i.e. it can compensate for the disturbance variable if"
-        }
-    }, 
     "a1066": "ts313", 
-    "ts316": {
-        "transcript": {
-            "a1067": "It's also known as the control effort. As I mentioned earlier, these are not free. It costs money."
-        }, 
-        "explain": {
-            "a1487": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1605": "Control Effort"
-        }
-    }, 
     "a1067": "ts316", 
-    "ts319": {
-        "transcript": {
-            "a1068": "because, otherwise - if you think it's free, you might waste it. You might say that - \"Cooling water - Water doesn't cost anything, let me plug the  system\", but water actually costs."
-        }, 
-        "explain": {
-            "a1488": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1606": "Control Effort"
-        }
-    }, 
     "a1068": "ts319", 
-    "ts321": {
-        "transcript": {
-            "a1069": "You may come up with wrong solutions if you implement it as a mathematical problem and you say that it doesn't cost anything, it might say \"Put infinite amount of cold water\""
-        }
-    }, 
     "a1069": "ts321", 
-    "ts323": {
-        "transcript": {
-            "a1070": "That will be a wrong solution because you forgot to mention that it cost."
-        }
-    }, 
     "a1070": "ts323", 
-    "ts325": {
-        "transcript": {
-            "a1071": "That's why you have to remember this. It is important.."
-        }
-    }, 
     "a1071": "ts325", 
-    "ts328": {
-        "transcript": {
-            "a1072": "This is another perspective of this. Variables from Input/Output point of view. These are the inputs that affect the system."
-        }, 
-        "define": {
-            "a1288": "Inputs : inputs that affect the system."
-        }, 
-        "diagram": {
-            "a1422": "Variables from input- output point of view"
-        }
-    }, 
     "a1072": "ts328", 
-    "ts331": {
-        "transcript": {
-            "a1073": "The consequence is the output or the controlled variable."
-        }, 
-        "define": {
-            "a1289": "Outputs : Output is the consequence or controlled variable.."
-        }, 
-        "explain": {
-            "a1489": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1607": "Controlled Variable"
-        }
-    }, 
     "a1073": "ts331", 
-    "ts333": {
-        "transcript": {
-            "a1074": "In fact, we will see all of this for the sample process."
-        }
-    }, 
     "a1074": "ts333", 
-    "ts335": {
-        "transcript": {
-            "a1075": "Whatever we discussed earlier, I'm going to ask you \" What is the disturbance variable, what is the manipulated variable, what is the controlled variable?\" "
-        }, 
-        "question": {
-            "a1305": "StimulatingThought"
-        }, 
-        "summary": {
-            "a1338": "GeneralReview"
-        }
-    }, 
     "a1075": "ts335", 
-    "ts337": {
-        "transcript": {
-            "a1076": "But, somehow the inputs"
-        }
-    }, 
     "a1076": "ts337", 
-    "ts339": {
-        "transcript": {
-            "a1077": "disturbance comes. So, the controlled variable is changing. Similarly"
-        }, 
-        "explain": {
-            "a1490": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1608": "Disturbance, Manipulated variables, Controlled variable"
-        }
-    }, 
     "a1077": "ts339", 
-    "ts341": {
-        "transcript": {
-            "a1078": "I change the"
-        }, 
-        "explain": {
-            "a1491": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1609": "Disturbance, Manipulated variables, Controlled variable"
-        }
-    }, 
     "a1078": "ts341", 
-    "ts343": {
-        "transcript": {
-            "a1079": "coolant air flow rate - I increased it. So the temperature is going to fall."
-        }, 
-        "explain": {
-            "a1492": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1610": "Disturbance, Manipulated variables, Controlled variable"
-        }
-    }, 
     "a1079": "ts343", 
-    "ts345": {
-        "transcript": {
-            "a1080": "These are input variables, these are the output variables."
-        }, 
-        "explain": {
-            "a1493": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1611": "Disturbance, Manipulated variables, Controlled variable"
-        }
-    }, 
     "a1080": "ts345", 
-    "ts347": {
-        "transcript": {
-            "a1081": "or you can think of this as the cause and think of this as the effect."
-        }
-    }, 
     "a1081": "ts347", 
-    "ts349": {
-        "transcript": {
-            "a1082": null
-        }
-    }, 
     "a1082": "ts349", 
-    "ts352": {
-        "transcript": {
-            "a1083": "We will apply this to the examples."
-        }
-    }, 
     "a1083": "ts352", 
-    "ts356": {
-        "transcript": {
-            "a1084": "We don't have Akash yet. Akash will be coming shortly. Maybe next class. Certainly this week. Then you will be using the clicker software in that. In the mean time, I would want you to say -1, 2, or 3."
-        }
-    }, 
     "a1084": "ts356", 
-    "ts359": {
-        "transcript": {
-            "a1085": "The temperature - understand the question first - the temperature of the process stream"
-        }, 
-        "explain": {
-            "a1494": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1612": "Process stream"
-        }
-    }, 
     "a1085": "ts359", 
-    "ts361": {
-        "transcript": {
-            "a1086": "what is the problem? It's an example."
-        }, 
-        "story": {
-            "a1360": "Example"
-        }, 
-        "storytitle": {
-            "a1393": "Fluid heater"
-        }
-    }, 
     "a1086": "ts361", 
-    "ts363": {
-        "transcript": {
-            "a1087": "It's a fluid heater. It heats the process stream to a required value. That's what it does."
-        }, 
-        "explain": {
-            "a1495": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1613": "Fluid Heater"
-        }
-    }, 
     "a1087": "ts363", 
-    "ts365": {
-        "transcript": {
-            "a1088": "Because your plant requires the stream at a particular value, this is a pre-heater. It heats it to a particular value and sends it."
-        }, 
-        "explain": {
-            "a1496": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1614": "Fluid Heater"
-        }
-    }, 
     "a1088": "ts365", 
-    "ts367": {
-        "transcript": {
-            "a1089": null
-        }
-    }, 
     "a1089": "ts367", 
-    "ts369": {
-        "transcript": {
-            "a1090": "You don't have to worry about where it is going to be used, what happens subsequently. Don't have to worry that it is a pre-heater. This is our universe. This is our system."
-        }
-    }, 
     "a1090": "ts369", 
-    "ts371": {
-        "transcript": {
-            "a1091": "Given this system, we have to ask \"What is the Manipulated Variable,What is Controlled Variable,what is "
-        }, 
-        "question": {
-            "a1673": "FocusingInformation"
-        }
-    }, 
     "a1091": "ts371", 
-    "ts373": {
-        "transcript": {
-            "a1092": "Disturbance Variable, and so on ?\" Here I have a specific question"
-        }
-    }, 
     "a1092": "ts373", 
-    "ts375": {
-        "transcript": {
-            "a1093": "Temperature of the process stream - at the exit is - you have to choose - 1, 2, or 3. Just hold up your hand so that I can see."
-        }, 
-        "question": {
-            "a1306": "StimulatingThought"
-        }
-    }, 
     "a1093": "ts375", 
-    "ts377": {
-        "transcript": {
-            "a1094": "You don't have to say it aloud. Don't say it"
-        }
-    }, 
     "a1094": "ts377", 
-    "ts379": {
-        "transcript": {
-            "a1095": null
-        }
-    }, 
     "a1095": "ts379", 
-    "ts381": {
-        "transcript": {
-            "a1096": "Very good. I see he has two."
-        }, 
-        "interaction": {
-            "a1430": "Student Answer"
-        }
-    }, 
     "a1096": "ts381", 
-    "ts383": {
-        "transcript": {
-            "a1097": null
-        }
-    }, 
     "a1097": "ts383", 
-    "ts385": {
-        "transcript": {
-            "a1098": "For temperature of the process stream at the exit - I think this is correct."
-        }, 
-        "answer": {
-            "a1325": "Answer"
-        }, 
-        "explain": {
-            "a1497": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1615": "Controlled Variable"
-        }
-    }, 
     "a1098": "ts385", 
-    "ts387": {
-        "transcript": {
-            "a1099": "The answer is Controlled Variable. That is correct. It is straightforward."
-        }, 
-        "answer": {
-            "a1326": "Answer"
-        }, 
-        "explain": {
-            "a1498": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1616": "Controlled Variable"
-        }
-    }, 
     "a1099": "ts387", 
-    "ts390": {
-        "transcript": {
-            "a1100": "Let's take the next thing."
-        }
-    }, 
     "a1100": "ts390", 
-    "ts393": {
-        "transcript": {
-            "a1101": "The temperature of the process stream at the inlet."
-        }, 
-        "question": {
-            "a1307": "StimulatingThought"
-        }
-    }, 
     "a1101": "ts393", 
-    "ts395": {
-        "transcript": {
-            "a1102": "How many people feel it is two?"
-        }
-    }, 
     "a1102": "ts395", 
-    "ts397": {
-        "transcript": {
-            "a1103": "We will  answer that, the answer is \"Disturbance variable\", of course,you can always say that I might change the temperature but remember"
-        }, 
-        "answer": {
-            "a1327": "Answer"
-        }, 
-        "explain": {
-            "a1499": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1617": "Temperature of the process stream at the exit"
-        }
-    }, 
     "a1103": "ts397", 
-    "ts399": {
-        "transcript": {
-            "a1104": "typically the feed to a process is something that you buy from somebody."
-        }, 
-        "define": {
-            "a1290": "Feed to a Process : Feed to Process is something that you buy from somebody."
-        }, 
-        "explain": {
-            "a1500": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1618": "Feed to Process"
-        }
-    }, 
     "a1104": "ts399", 
-    "ts401": {
-        "transcript": {
-            "a1105": "Ok,because I told you that this universe. What is this universe?"
-        }, 
-        "define": {
-            "a1291": "Universe : universe is the preheater, It takes something from somewhere, and sends it out for some purpose"
-        }, 
-        "question": {
-            "a1308": "FocusingInformation"
-        }, 
-        "explain": {
-            "a1501": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1619": "Universe"
-        }
-    }, 
     "a1105": "ts401", 
-    "ts403": {
-        "transcript": {
-            "a1106": "the preheater. The preheater is your universe. It takes something from somewhere, and sends it out for some purpose."
-        }, 
-        "answer": {
-            "a1328": "Answer"
-        }, 
-        "explain": {
-            "a1502": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1620": "Universe"
-        }
-    }, 
     "a1106": "ts403", 
-    "ts405": {
-        "transcript": {
-            "a1107": "ok,"
-        }
-    }, 
     "a1107": "ts405", 
-    "ts408": {
-        "transcript": {
-            "a1108": "and I had mentioned it here."
-        }
-    }, 
     "a1108": "ts408", 
-    "ts411": {
-        "transcript": {
-            "a1109": "Disturbance variable is something on which we have no handle"
-        }, 
-        "explain": {
-            "a1503": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1621": "Disturbance Variable"
-        }
-    }, 
     "a1109": "ts411", 
-    "ts413": {
-        "transcript": {
-            "a1110": "and typically"
-        }
-    }, 
     "a1110": "ts413", 
-    "ts416": {
-        "transcript": {
-            "a1111": "a feed is something, that is a disturbance variable unless it is mentioned otherwise. Because it is something that you procure from outside, procure from the market. For example,"
-        }, 
-        "explain": {
-            "a1504": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1622": "Disturbance Variable"
-        }, 
-        "story": {
-            "a1361": "Example"
-        }, 
-        "storytitle": {
-            "a1394": "Refining of Crude "
-        }
-    }, 
     "a1111": "ts416", 
-    "ts419": {
-        "transcript": {
-            "a1112": null
-        }
-    }, 
     "a1112": "ts419", 
-    "ts421": {
-        "transcript": {
-            "a1113": "lets look at refining of crude"
-        }, 
-        "explain": {
-            "a1505": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1623": "Feed is procured from outside/market"
-        }
-    }, 
     "a1113": "ts421", 
-    "ts423": {
-        "transcript": {
-            "a1114": "and there is a plant, lets say Reliance Jamnagar, actually and then it takes some whatever Libyan light or something, it processes, gives output"
-        }, 
-        "explain": {
-            "a1506": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1624": "Feed is procured from outside/market"
-        }
-    }, 
     "a1114": "ts423", 
-    "ts425": {
-        "transcript": {
-            "a1115": "so tomorrow there is a MOU between our minister and some other middle eastern country, and they say \"We have a deal, we give this crude\" may be \"50 cents cheaper per barrel\". So Reliance says \"ok, I can use that\""
-        }, 
-        "explain": {
-            "a1507": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1625": "Feed is procured from outside/market"
-        }
-    }, 
     "a1115": "ts425", 
-    "ts427": {
-        "transcript": {
-            "a1116": "so now, they can not.. If they take a decision they would use this new crude"
-        }, 
-        "explain": {
-            "a1508": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1626": "Feed is procured from outside/market"
-        }
-    }, 
     "a1116": "ts427", 
-    "ts429": {
-        "transcript": {
-            "a1117": "they have to accept it, whatever it is."
-        }
-    }, 
     "a1117": "ts429", 
-    "ts431": {
-        "transcript": {
-            "a1118": "right?  or u go to the market and somebody says that \"I don't have that, but I have this at a much lower price. Do you want to use it?\""
-        }
-    }, 
     "a1118": "ts431", 
-    "ts433": {
-        "transcript": {
-            "a1119": "so if we can use it, fantastic! "
-        }
-    }, 
     "a1119": "ts433", 
-    "ts435": {
-        "transcript": {
-            "a1120": "typically, the feed to a system is something external to the system."
-        }
-    }, 
     "a1120": "ts435", 
-    "ts437": {
-        "transcript": {
-            "a1121": "unless it is clearly marked out."
-        }
-    }, 
     "a1121": "ts437", 
-    "ts439": {
-        "transcript": {
-            "a1122": "Is that ok?"
-        }
-    }, 
     "a1122": "ts439", 
-    "ts441": {
-        "transcript": {
-            "a1123": "Does it answer the people who have chosen 2?"
-        }
-    }, 
     "a1123": "ts441", 
-    "ts444": {
-        "transcript": {
-            "a1124": "Next one. lets take fluid heater"
-        }
-    }, 
     "a1124": "ts444", 
-    "ts447": {
-        "transcript": {
-            "a1125": "Its the same thing. \"The flow rate of the heating medium used is\". What about this? This is straight forward, right?"
-        }, 
-        "question": {
-            "a1309": "StimulatingThought"
-        }
-    }, 
     "a1125": "ts447", 
-    "ts449": {
-        "transcript": {
-            "a1126": " what is this?"
-        }
-    }, 
     "a1126": "ts449", 
-    "ts451": {
-        "transcript": {
-            "a1127": "this is the control effort that we put in."
-        }
-    }, 
     "a1127": "ts451", 
-    "ts453": {
-        "transcript": {
-            "a1128": "Does anybody want the explanation, the answer is correct. The answer is 2, It is the \"Manipulated Variable\"."
-        }, 
-        "answer": {
-            "a1329": "Answer"
-        }
-    }, 
     "a1128": "ts453", 
-    "ts455": {
-        "transcript": {
-            "a1129": "If it is not clear to anybody, just raise your hand."
-        }
-    }, 
     "a1129": "ts455", 
-    "ts457": {
-        "transcript": {
-            "a1130": null
-        }
-    }, 
     "a1130": "ts457", 
-    "ts459": {
-        "transcript": {
-            "a1131": "Manipulated. You can think of this as a valve."
-        }
-    }, 
     "a1131": "ts459", 
-    "ts461": {
-        "transcript": {
-            "a1132": "Its a knob that you want to change"
-        }, 
-        "explain": {
-            "a1509": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1627": "Manipulated Variable"
-        }
-    }, 
     "a1132": "ts461", 
-    "ts463": {
-        "transcript": {
-            "a1133": "right? why do you change it,"
-        }, 
-        "question": {
-            "a1310": "FocusingInformation"
-        }, 
-        "explain": {
-            "a1510": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1628": "Manipulated Variable"
-        }
-    }, 
     "a1133": "ts463", 
-    "ts465": {
-        "transcript": {
-            "a1134": "because something is not good,"
-        }, 
-        "explain": {
-            "a1511": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1629": "Manipulated Variable"
-        }
-    }, 
     "a1134": "ts465", 
-    "ts467": {
-        "transcript": {
-            "a1135": "something is not at the required value."
-        }, 
-        "explain": {
-            "a1512": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1630": "Manipulated Variable"
-        }
-    }, 
     "a1135": "ts467", 
-    "ts469": {
-        "transcript": {
-            "a1136": "You want to maintain the temperature at 25 degrees, but suddenly some 20 people have entered from outside, so temperature has gone up."
-        }, 
-        "explain": {
-            "a1513": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1631": "Manipulated Variable"
-        }
-    }, 
     "a1136": "ts469", 
-    "ts471": {
-        "transcript": {
-            "a1137": "It has gone to say 27 degrees."
-        }, 
-        "explain": {
-            "a1514": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1632": "Manipulated Variable"
-        }
-    }, 
     "a1137": "ts471", 
-    "ts473": {
-        "transcript": {
-            "a1138": "So you want to cool it. Remember the knob, so you adjust it."
-        }, 
-        "explain": {
-            "a1515": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1633": "Manipulated Variable"
-        }
-    }, 
     "a1138": "ts473", 
-    "ts475": {
-        "transcript": {
-            "a1139": "So in this case, it is the cold air flow rate. You might say, you increase the opening, so more cold air goes,"
-        }, 
-        "explain": {
-            "a1516": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1634": "Manipulated Variable"
-        }
-    }, 
     "a1139": "ts475", 
-    "ts477": {
-        "transcript": {
-            "a1140": "so that is the manipulated variable,"
-        }, 
-        "explain": {
-            "a1517": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1635": "Manipulated Variable"
-        }
-    }, 
     "a1140": "ts477", 
-    "ts479": {
-        "transcript": {
-            "a1141": "you can think of all of these as instantaneous values not over a period of time."
-        }
-    }, 
     "a1141": "ts479", 
-    "ts481": {
-        "transcript": {
-            "a1142": "you can say \"what is the temperature now? It is not at the value. So, what should I do?\""
-        }
-    }, 
     "a1142": "ts481", 
-    "ts483": {
-        "transcript": {
-            "a1143": "In fact this is how it is going to be implemented. We are going to, in fact you will study the single body heat system, there you will monitor every time instance. At every time instance, you will say, \"What is the temperature? Where should it be? And where am I?\""
-        }
-    }, 
     "a1143": "ts483", 
-    "ts485": {
-        "transcript": {
-            "a1144": "so, let me change it. let me adjust it."
-        }
-    }, 
     "a1144": "ts485", 
-    "ts487": {
-        "transcript": {
-            "a1145": "Its for, only what?"
-        }
-    }, 
     "a1145": "ts487", 
-    "ts489": {
-        "transcript": {
-            "a1146": "initial setting.It is not required. you might even say that - I don't know if you have done Gas Chromatography."
-        }
-    }, 
     "a1146": "ts489", 
-    "ts491": {
-        "transcript": {
-            "a1147": "have you done gas chromatograph? have you done thermal temperature programming? you might even say \"It need not be at a constant value\""
-        }
-    }, 
     "a1147": "ts491", 
-    "ts493": {
-        "transcript": {
-            "a1148": "you might say that \"I want the temperature to change linearly.\""
-        }
-    }, 
     "a1148": "ts493", 
-    "ts495": {
-        "transcript": {
-            "a1149": "In a room temperature, you may not do that. you may not say that \"my body actually likes temperature to go up and down.\" you may not say that. But then here is a system that says \"I want to increase the temperature because something  will dissolve, after some point, I will hold it constant, then I will bring it down. because I want to cool it, bring it back to the room temperature.\" You might do all of this."
-        }, 
-        "explain": {
-            "a1518": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1636": "Maintaining Temperature at desired value."
-        }
-    }, 
     "a1149": "ts495", 
-    "ts497": {
-        "transcript": {
-            "a1150": "Of course, we take a simple thing saying that I want to change it to some other value, some constant value, but it is not required."
-        }, 
-        "explain": {
-            "a1519": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1637": "Maintaining Temperature at desired value."
-        }
-    }, 
     "a1150": "ts497", 
-    "ts499": {
-        "transcript": {
-            "a1151": "Does this answer you question?"
-        }
-    }, 
     "a1151": "ts499", 
-    "ts501": {
-        "transcript": {
-            "a1152": "So there is something desired, whether it is constant or changing, sinusoidal, whatever; everything is possible."
-        }, 
-        "explain": {
-            "a1520": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1638": "Variables"
-        }
-    }, 
     "a1152": "ts501", 
-    "ts503": {
-        "transcript": {
-            "a1153": "and there is somebody who is trying to prevent that from happening. That is a disturbance."
-        }, 
-        "explain": {
-            "a1521": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1639": "Variables"
-        }
-    }, 
     "a1153": "ts503", 
-    "ts505": {
-        "transcript": {
-            "a1154": "So you adjust, you compensate for that by manipulating the knob under your control. That is your manipulated variable or control effort or whatever, because it has associated cost."
-        }, 
-        "explain": {
-            "a1522": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1640": "Variables"
-        }
-    }, 
     "a1154": "ts505", 
-    "ts507": {
-        "transcript": {
-            "a1155": null
-        }
-    }, 
     "a1155": "ts507", 
-    "ts509": {
-        "transcript": {
-            "a1156": "Is that ok?"
-        }
-    }, 
     "a1156": "ts509", 
-    "ts511": {
-        "transcript": {
-            "a1157": "What is controlled? meaning?"
-        }
-    }, 
     "a1157": "ts511", 
-    "ts513": {
-        "transcript": {
-            "a1158": "correct! What is controlled? temperature you want to maintain! Room temperature - 25 degrees. It went to 35."
-        }, 
-        "question": {
-            "a1311": "FocusingInformation"
-        }, 
-        "answer": {
-            "a1330": "Answer"
-        }, 
-        "interaction": {
-            "a1431": "Student Answer"
-        }
-    }, 
     "a1158": "ts513", 
-    "ts515": {
-        "transcript": {
-            "a1159": "so it is not at the required value. You wanted it to be at 25."
-        }, 
-        "answer": {
-            "a1331": "Answer"
-        }
-    }, 
     "a1159": "ts515", 
-    "ts517": {
-        "transcript": {
-            "a1160": "so you want to control the temperature to 25."
-        }, 
-        "answer": {
-            "a1332": "Answer"
-        }
-    }, 
     "a1160": "ts517", 
-    "ts519": {
-        "transcript": {
-            "a1161": "Is that ok?"
-        }
-    }, 
     "a1161": "ts519", 
-    "ts521": {
-        "transcript": {
-            "a1162": null
-        }
-    }, 
     "a1162": "ts521", 
-    "ts524": {
-        "transcript": {
-            "a1163": "summary."
-        }
-    }, 
     "a1163": "ts524", 
-    "ts527": {
-        "transcript": {
-            "a1164": "Recall that it heats the process stream with a heating medium."
-        }
-    }, 
     "a1164": "ts527", 
-    "ts530": {
-        "transcript": {
-            "a1165": "Controlled variable is the temperature of the exit stream on process side. It is also known as a set point."
-        }, 
-        "define": {
-            "a1292": " Set Point : Controlled variable is the temperature of the exit stream on process side. It is also known as a set point."
-        }, 
-        "explain": {
-            "a1523": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1641": "Set Point"
-        }
-    }, 
     "a1165": "ts530", 
-    "ts533": {
-        "transcript": {
-            "a1166": "ok, control variable will always be compared with the set point. I want to be at 25 degrees, where am I at?"
-        }, 
-        "explain": {
-            "a1524": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1642": "Set Point"
-        }
-    }, 
     "a1166": "ts533", 
-    "ts535": {
-        "transcript": {
-            "a1167": "I am at 35. so you are not at the required value. there is an offset, there is an error, you try to correct."
-        }, 
-        "explain": {
-            "a1525": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1643": "Set Point"
-        }
-    }, 
     "a1167": "ts535", 
-    "ts538": {
-        "transcript": {
-            "a1168": "Disturbance variable is the inlet conditions on process fluid."
-        }, 
-        "explain": {
-            "a1526": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1644": "Disturbance Variable"
-        }
-    }, 
     "a1168": "ts538", 
-    "ts542": {
-        "transcript": {
-            "a1169": "Manipulated variable is temperature or flow rate of the heating medium or cooling medium."
-        }, 
-        "explain": {
-            "a1527": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1645": "Manipulated Variable."
-        }
-    }, 
     "a1169": "ts542", 
-    "ts546": {
-        "transcript": {
-            "a1170": "so, here is the distillation column."
-        }, 
-        "diagram": {
-            "a1423": "Schematic of distillation Column"
-        }
-    }, 
     "a1170": "ts546", 
-    "ts550": {
-        "transcript": {
-            "a1171": "so, what I want to ask you is, lets look at one control strategy - distillation."
-        }
-    }, 
     "a1171": "ts550", 
-    "ts553": {
-        "transcript": {
-            "a1172": "Of course, it looks very complicated. Don't worry about that."
-        }
-    }, 
     "a1172": "ts553", 
-    "ts555": {
-        "transcript": {
-            "a1173": "Remember, what we want to do is, we want to maintain the composition at a required value, the bottoms composition at a required value."
-        }, 
-        "explain": {
-            "a1528": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1646": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1173": "ts555", 
-    "ts557": {
-        "transcript": {
-            "a1174": "and wherever I have put valves"
-        }, 
-        "explain": {
-            "a1529": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1647": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1174": "ts557", 
-    "ts559": {
-        "transcript": {
-            "a1175": "notice that there is valve here, there is a valve here. That means I am changing it, there is a knob. Thats how I am maintaining it. so here I am saying, I will change the withdrawal rate, I will change the reflux rate."
-        }, 
-        "explain": {
-            "a1530": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1648": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1175": "ts559", 
-    "ts561": {
-        "transcript": {
-            "a1176": "I will change the bottoms withdrawal rate, I will change the re-boiler "
-        }, 
-        "explain": {
-            "a1531": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1649": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1176": "ts561", 
-    "ts564": {
-        "transcript": {
-            "a1177": "and of course, condenser load, so these are all condenser coolant, how much coolant is going through, So all of these are changed. So here is one"
-        }, 
-        "diagram": {
-            "a1424": "Distillation Column: Control Strategy"
-        }, 
-        "explain": {
-            "a1532": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1650": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1177": "ts564", 
-    "ts567": {
-        "transcript": {
-            "a1178": "control strategy. The simple control strategy of room heating is very easy. But in a real plant it could be lot more complicated."
-        }, 
-        "explain": {
-            "a1533": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1651": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1178": "ts567", 
-    "ts569": {
-        "transcript": {
-            "a1179": "We will not spend too much time on this. We might discuss this later if required. For example, you might say that let me control"
-        }
-    }, 
     "a1179": "ts569", 
-    "ts571": {
-        "transcript": {
-            "a1180": "I want to control the level here, level transmitter with the bottom withdrawal rate,that is  also very important thing  in the distillation control. You  want to maintain  some liquid, if don't maintain some liquid,it  runs dry for example the  whole distillation will be upset."
-        }, 
-        "explain": {
-            "a1534": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1652": "Control Strategy - Distillation Column."
-        }
-    }, 
     "a1180": "ts571", 
-    "ts573": {
-        "transcript": {
-            "a1181": "In that sense distillation column is lot more complicated."
-        }
-    }, 
     "a1181": "ts573", 
-    "ts575": {
-        "transcript": {
-            "a1182": "AT is analyser."
-        }
-    }, 
     "a1182": "ts575", 
-    "ts577": {
-        "transcript": {
-            "a1183": "Analyser, it gives the concentration."
-        }
-    }, 
     "a1183": "ts577", 
-    "ts579": {
-        "transcript": {
-            "a1184": "Concentration value,"
-        }
-    }, 
     "a1184": "ts579", 
-    "ts581": {
-        "transcript": {
-            "a1185": "will discuss this later, ok just  a give feel for, what kind of things are done in this?"
-        }
-    }, 
     "a1185": "ts581", 
-    "ts584": {
-        "transcript": {
-            "a1186": "Ok,"
-        }
-    }, 
     "a1186": "ts584", 
-    "ts588": {
-        "transcript": {
-            "a1187": "will see this little later, but you can see that, these three"
-        }
-    }, 
     "a1187": "ts588", 
-    "ts591": {
-        "transcript": {
-            "a1188": "are to do with three lines here, one line here,"
-        }
-    }, 
     "a1188": "ts591", 
-    "ts593": {
-        "transcript": {
-            "a1189": "second line here, the third line."
-        }
-    }, 
     "a1189": "ts593", 
-    "ts595": {
-        "transcript": {
-            "a1190": "Ok,I would wanted you to go through this and we discuss it later."
-        }
-    }, 
     "a1190": "ts595", 
-    "ts598": {
-        "transcript": {
-            "a1191": "This is an example of multi-variable system."
-        }, 
-        "story": {
-            "a1362": "Example"
-        }, 
-        "storytitle": {
-            "a1395": "Multi-variable System"
-        }
-    }, 
     "a1191": "ts598", 
-    "ts602": {
-        "transcript": {
-            "a1192": "go through this quickly,we mix two streams."
-        }, 
-        "explain": {
-            "a1535": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1653": "Mixing Process"
-        }
-    }, 
     "a1192": "ts602", 
-    "ts605": {
-        "transcript": {
-            "a1193": "Here we have x1,variable stream has composition (x1) varying"
-        }, 
-        "explain": {
-            "a1536": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1654": "Mixing Process"
-        }
-    }, 
     "a1193": "ts605", 
-    "ts607": {
-        "transcript": {
-            "a1194": "but,I wanted to be at particular value."
-        }, 
-        "explain": {
-            "a1537": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1655": "Mixing Process"
-        }
-    }, 
     "a1194": "ts607", 
-    "ts609": {
-        "transcript": {
-            "a1195": "Remember x1 is a feed composition and feed is a variable,disturbance you don't have any control on this so,its start fluctuating."
-        }, 
-        "explain": {
-            "a1538": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1656": "Mixing Process"
-        }
-    }, 
     "a1195": "ts609", 
-    "ts611": {
-        "transcript": {
-            "a1196": "So, what you do is, you have a pure component"
-        }, 
-        "explain": {
-            "a1539": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1657": "Mixing Process"
-        }
-    }, 
     "a1196": "ts611", 
-    "ts613": {
-        "transcript": {
-            "a1197": "Ok, that you adjust in different quantities so as to maintain x at the right."
-        }, 
-        "explain": {
-            "a1540": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1658": "Mixing Process"
-        }
-    }, 
     "a1197": "ts613", 
-    "ts615": {
-        "transcript": {
-            "a1198": "Flow rate is of course is taken care of because,"
-        }, 
-        "explain": {
-            "a1541": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1659": "Mixing Process"
-        }
-    }, 
     "a1198": "ts615", 
-    "ts617": {
-        "transcript": {
-            "a1199": "Why the flow rate is taken care of?"
-        }, 
-        "question": {
-            "a1312": "StimulatingThought"
-        }
-    }, 
     "a1199": "ts617", 
-    "ts619": {
-        "transcript": {
-            "a1200": null
-        }
-    }, 
     "a1200": "ts619", 
-    "ts621": {
-        "transcript": {
-            "a1201": null
-        }
-    }, 
     "a1201": "ts621", 
-    "ts623": {
-        "transcript": {
-            "a1202": "No,its an overflow "
-        }, 
-        "answer": {
-            "a1333": "Answer"
-        }, 
-        "interaction": {
-            "a1432": "Student Answer"
-        }
-    }, 
     "a1202": "ts623", 
-    "ts626": {
-        "transcript": {
-            "a1203": "overflow it may,it always overflow so,that is simple  kind of"
-        }, 
-        "answer": {
-            "a1334": "Answer"
-        }
-    }, 
     "a1203": "ts626", 
-    "ts630": {
-        "transcript": {
-            "a1204": "one output composition constant."
-        }
-    }, 
     "a1204": "ts630", 
-    "ts634": {
-        "transcript": {
-            "a1205": "Control streams flow can be change,this is control valve,streams can be changed and we can produce composition at the desired."
-        }
-    }, 
     "a1205": "ts634", 
-    "ts638": {
-        "transcript": {
-            "a1206": "This is further emphasizes about  feed concentration, feed concentration is in general"
-        }, 
-        "question": {
-            "a1313": "FocusingInformation"
-        }
-    }, 
     "a1206": "ts638", 
-    "ts642": {
-        "transcript": {
-            "a1207": "disturbance variable,I will not even take your poll, we discussed it quite a bit..., the temperature is similar"
-        }, 
-        "answer": {
-            "a1335": "Answer"
-        }
-    }, 
     "a1207": "ts642", 
-    "ts646": {
-        "transcript": {
-            "a1208": "Ok."
-        }
-    }, 
     "a1208": "ts646", 
-    "ts650": {
-        "transcript": {
-            "a1209": "Feed flow rate, ok so Feed concentration is ok"
-        }
-    }, 
     "a1209": "ts650", 
-    "ts653": {
-        "transcript": {
-            "a1210": "normally Feed flow rate is decided by other considerations, however!"
-        }, 
-        "explain": {
-            "a1542": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1660": "Feed floe rate"
-        }
-    }, 
     "a1210": "ts653", 
-    "ts655": {
-        "transcript": {
-            "a1211": "I just want to,"
-        }
-    }, 
     "a1211": "ts655", 
-    "ts657": {
-        "transcript": {
-            "a1212": "I am not sure how much time I should spend on this?"
-        }
-    }, 
     "a1212": "ts657", 
-    "ts659": {
-        "transcript": {
-            "a1213": null
-        }
-    }, 
     "a1213": "ts659", 
-    "ts661": {
-        "transcript": {
-            "a1214": "Feed flow rate is definitely not a manipulated."
-        }, 
-        "explain": {
-            "a1543": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1661": "Feed flow rate"
-        }
-    }, 
     "a1214": "ts661", 
-    "ts663": {
-        "transcript": {
-            "a1215": "That much I can say, can be a disturbance variable,"
-        }, 
-        "explain": {
-            "a1544": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1662": "Feed flow rate"
-        }
-    }, 
     "a1215": "ts663", 
-    "ts665": {
-        "transcript": {
-            "a1216": "but it will never be a manipulated variable.Why it will be never be a manipulated variable?"
-        }, 
-        "explain": {
-            "a1545": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1663": "Feed flow rate"
-        }
-    }, 
     "a1216": "ts665", 
-    "ts667": {
-        "transcript": {
-            "a1217": "because,every plant has a target value."
-        }, 
-        "explain": {
-            "a1546": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1664": "Feed flow rate"
-        }
-    }, 
     "a1217": "ts667", 
-    "ts669": {
-        "transcript": {
-            "a1218": "I want to produce so many tonnes,you are not going to change it, you are not going to manipulate it."
-        }, 
-        "explain": {
-            "a1547": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1665": "Feed flow rate"
-        }
-    }, 
     "a1218": "ts669", 
-    "ts671": {
-        "transcript": {
-            "a1219": "Is that ok?"
-        }
-    }, 
     "a1219": "ts671", 
-    "ts674": {
-        "transcript": {
-            "a1220": "Ok."
-        }
-    }, 
     "a1220": "ts674", 
-    "ts677": {
-        "transcript": {
-            "a1221": "We will go to the last part of  this course,it is Course Organisation.I want to spend about ten minutes to"
-        }
-    }, 
     "a1221": "ts677", 
-    "ts679": {
-        "transcript": {
-            "a1222": "how this course is going to be organise? whatever we discussed until now,we are going to see lot more out, but I thought i will just spend  some time  last ten minutes, just talk about Course Organisation."
-        }
-    }, 
     "a1222": "ts679", 
-    "ts682": {
-        "transcript": {
-            "a1223": "So, these are the Textbooks. By the way I going to put the slides on the forums either in moodle or courses"
-        }
-    }, 
     "a1223": "ts682", 
-    "ts686": {
-        "transcript": {
-            "a1224": "there is no name for that yet so, will put it there."
-        }
-    }, 
     "a1224": "ts686", 
-    "ts690": {
-        "transcript": {
-            "a1225": "So, this is  main textbook Process Dynamics and Control by Seborg,Edgar & Mellichamp and my book Digital Control will be used to-wards end of the course, we will also use last year video courses"
-        }, 
-        "explain": {
-            "a1548": "Reporting"
-        }, 
-        "topic": {
-            "a1666": "Textbooks and References"
-        }
-    }, 
     "a1225": "ts690", 
-    "ts694": {
-        "transcript": {
-            "a1226": "Quickly Scilab,"
-        }
-    }, 
     "a1226": "ts694", 
-    "ts697": {
-        "transcript": {
-            "a1227": "have you been expose to Scilab?"
-        }
-    }, 
     "a1227": "ts697", 
-    "ts699": {
-        "transcript": {
-            "a1228": "Ok,so I don't have to spend  too much time on this."
-        }
-    }, 
     "a1228": "ts699", 
-    "ts702": {
-        "transcript": {
-            "a1229": "I will skip this also, its a amazing"
-        }
-    }, 
     "a1229": "ts702", 
-    "ts705": {
-        "transcript": {
-            "a1230": "computational environment.Why it is amazing?"
-        }
-    }, 
     "a1230": "ts705", 
-    "ts708": {
-        "transcript": {
-            "a1231": "I don't know whether,I mentioned this earlier,Scilab is used extensively in CNES.I have already talked about this"
-        }, 
-        "explain": {
-            "a1549": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1667": "Scilab"
-        }
-    }, 
     "a1231": "ts708", 
-    "ts712": {
-        "transcript": {
-            "a1232": "when in last class? ok good, so we can quickly go through this"
-        }, 
-        "interaction": {
-            "a1433": "Student Answer"
-        }
-    }, 
     "a1232": "ts712", 
-    "ts716": {
-        "transcript": {
-            "a1233": "what I wanted to... I don't think I showed this talk in the last class."
-        }
-    }, 
     "a1233": "ts716", 
-    "ts719": {
-        "transcript": {
-            "a1234": "ok"
-        }
-    }, 
     "a1234": "ts719", 
-    "ts721": {
-        "transcript": {
-            "a1235": "This is Martin. He says Scilab is now widely used in CNES. in various engineering fields, such as Telecommunications, RF analysis, Navigation, Altitude Control System analysis... and so on"
-        }, 
-        "explain": {
-            "a1550": "Reporting"
-        }, 
-        "topic": {
-            "a1668": "Various use of Scilab"
-        }
-    }, 
     "a1235": "ts721", 
-    "ts723": {
-        "transcript": {
-            "a1236": "widely used in CNES flight dynamics departments."
-        }, 
-        "explain": {
-            "a1551": "Reporting"
-        }, 
-        "topic": {
-            "a1669": "Various use of Scilab"
-        }
-    }, 
     "a1236": "ts723", 
-    "ts725": {
-        "transcript": {
-            "a1237": "So,I will skip that"
-        }
-    }, 
     "a1237": "ts725", 
-    "ts727": {
-        "transcript": {
-            "a1238": "ok"
-        }
-    }, 
     "a1238": "ts727", 
-    "ts729": {
-        "transcript": {
-            "a1239": "I think this, I also Mentioned, so I can skip all  this"
-        }
-    }, 
     "a1239": "ts729", 
-    "ts732": {
-        "transcript": {
-            "a1240": "but people  with Scilab knowledge are in short  supply, may be useful to get jobs. People says \"unless you know Matlab you won't get job\", actually it's rather way out.If you know scilab its easier to get jobs,I also mentioned in last class it is useful to entrepreneurs, your investment cost is low and the for the end user  also it becomes lot cheaper to use your product."
-        }, 
-        "explain": {
-            "a1552": "Describing&Interpreting"
-        }, 
-        "topic": {
-            "a1670": "Jobs in Scilab"
-        }
-    }, 
     "a1240": "ts732", 
-    "ts736": {
-        "transcript": {
-            "a1241": "I would want you  visit Scilab.in -  it is run by us."
-        }
-    }, 
     "a1241": "ts736", 
-    "ts740": {
-        "transcript": {
-            "a1242": "We have close to 200 textbook companions, I think i have mentioned about Scilab textbook companion,did i talk about it? may be I did.I will show you the website, so basically it is Scilab .in website."
-        }
-    }, 
     "a1242": "ts740", 
-    "ts743": {
-        "transcript": {
-            "a1243": "Here there is something called Scilab on GARUDA .So I clicked it"
-        }, 
-        "story": {
-            "a1363": "Demo"
-        }, 
-        "storytitle": {
-            "a1396": "Scilab on GARUDA"
-        }
-    }, 
     "a1243": "ts743", 
-    "ts745": {
-        "transcript": {
-            "a1244": "to get this link Scilab on GARUDA Cloud, this maintained by CDAC (Bangalore)."
-        }, 
-        "story": {
-            "a1364": "Demo"
-        }, 
-        "storytitle": {
-            "a1397": "Scilab on GARUDA"
-        }
-    }, 
     "a1244": "ts745", 
-    "ts747": {
-        "transcript": {
-            "a1245": "It says click hereto access Scilab on GARUDA Cloud so, I clicked it."
-        }, 
-        "story": {
-            "a1365": "Demo"
-        }, 
-        "storytitle": {
-            "a1398": "Scilab on GARUDA"
-        }
-    }, 
     "a1245": "ts747", 
-    "ts749": {
-        "transcript": {
-            "a1246": "Here is result."
-        }, 
-        "story": {
-            "a1366": "Demo"
-        }, 
-        "storytitle": {
-            "a1399": "Scilab on GARUDA"
-        }
-    }, 
     "a1246": "ts749", 
-    "ts751": {
-        "transcript": {
-            "a1247": "Ok"
-        }
-    }, 
     "a1247": "ts751", 
-    "ts753": {
-        "transcript": {
-            "a1248": "So, here is Scilab on GARUDA Cloud , you can select  the Category."
-        }, 
-        "story": {
-            "a1367": "Demo"
-        }, 
-        "storytitle": {
-            "a1400": "Scilab on GARUDA"
-        }
-    }, 
     "a1248": "ts753", 
-    "ts755": {
-        "transcript": {
-            "a1249": "There are some Analog Electronics books, there are some Chemical Engineering books"
-        }, 
-        "story": {
-            "a1368": "Demo"
-        }, 
-        "storytitle": {
-            "a1401": "Scilab on GARUDA"
-        }
-    }, 
     "a1249": "ts755", 
-    "ts757": {
-        "transcript": {
-            "a1250": "for us Control Theory and Control Systems."
-        }, 
-        "story": {
-            "a1369": "Demo"
-        }, 
-        "storytitle": {
-            "a1402": "Scilab on GARUDA"
-        }
-    }, 
     "a1250": "ts757", 
-    "ts759": {
-        "transcript": {
-            "a1251": "It says what book you want to select?"
-        }, 
-        "story": {
-            "a1370": "Demo"
-        }, 
-        "storytitle": {
-            "a1403": "Scilab on GARUDA"
-        }
-    }, 
     "a1251": "ts759", 
-    "ts761": {
-        "transcript": {
-            "a1252": "Ok, by the way our textbook is  getting included, it will included shortly, most of the examples are already have been coded , but let me just check Control System Engineering by Nagarath Gopal."
-        }, 
-        "story": {
-            "a1371": "Demo"
-        }, 
-        "storytitle": {
-            "a1404": "Scilab on GARUDA"
-        }
-    }, 
     "a1252": "ts761", 
-    "ts763": {
-        "transcript": {
-            "a1253": "Then it will say what chapter are you working on? "
-        }, 
-        "story": {
-            "a1372": "Demo"
-        }, 
-        "storytitle": {
-            "a1405": "Scilab on GARUDA"
-        }
-    }, 
     "a1253": "ts763", 
-    "ts765": {
-        "transcript": {
-            "a1254": "It will says Feedback Characteristics of Control System.You can choose whatever;"
-        }, 
-        "story": {
-            "a1373": "Demo"
-        }, 
-        "storytitle": {
-            "a1406": "Scilab on GARUDA"
-        }
-    }, 
     "a1254": "ts765", 
-    "ts767": {
-        "transcript": {
-            "a1255": "What example do you want to solve?"
-        }, 
-        "story": {
-            "a1374": "Demo"
-        }, 
-        "storytitle": {
-            "a1407": "Scilab on GARUDA"
-        }
-    }, 
     "a1255": "ts767", 
-    "ts769": {
-        "transcript": {
-            "a1256": "this, Steady State Error."
-        }, 
-        "story": {
-            "a1375": "Demo"
-        }, 
-        "storytitle": {
-            "a1408": "Scilab on GARUDA"
-        }
-    }, 
     "a1256": "ts769", 
-    "ts771": {
-        "transcript": {
-            "a1257": "So, you selected then the code come."
-        }, 
-        "story": {
-            "a1376": "Demo"
-        }, 
-        "storytitle": {
-            "a1409": "Scilab on GARUDA"
-        }
-    }, 
     "a1257": "ts771", 
-    "ts773": {
-        "transcript": {
-            "a1258": "Then you execute."
-        }, 
-        "story": {
-            "a1377": "Demo"
-        }, 
-        "storytitle": {
-            "a1410": "Scilab on GARUDA"
-        }
-    }, 
     "a1258": "ts773", 
-    "ts775": {
-        "transcript": {
-            "a1259": "Ok"
-        }
-    }, 
     "a1259": "ts775", 
-    "ts777": {
-        "transcript": {
-            "a1260": "It has got. "
-        }
-    }, 
     "a1260": "ts777", 
-    "ts779": {
-        "transcript": {
-            "a1261": "ok"
-        }
-    }, 
     "a1261": "ts779", 
-    "ts781": {
-        "transcript": {
-            "a1262": "In fact we have to put a... Feedback here saying that \"this doesn't work\"so we will know,because you look at the number of example we have, number of functions we have, in every book we have hundreds of examples."
-        }, 
-        "story": {
-            "a1378": "Demo"
-        }, 
-        "storytitle": {
-            "a1411": "Scilab on GARUDA"
-        }
-    }, 
     "a1262": "ts781", 
-    "ts783": {
-        "transcript": {
-            "a1263": "three functions or three hundred into two hundred textbooks, so we have very large numbers, sometimes it is difficult to do that, let me just take some other example"
-        }
-    }, 
     "a1263": "ts783", 
-    "ts785": {
-        "transcript": {
-            "a1264": "sorry"
-        }
-    }, 
     "a1264": "ts785", 
-    "ts787": {
-        "transcript": {
-            "a1265": "change the book,ok so we will see later,but I think there is some configuration problem,I will ask people to correct the few things,this is live by the way as we take on inputs and so on,will go through this again but I can assure you this is minor problem its going to work."
-        }, 
-        "interaction": {
-            "a1434": "Other"
-        }, 
-        "summary": {
-            "a1340": "FuturePreview"
-        }
-    }, 
     "a1265": "ts787", 
-    "ts790": {
-        "transcript": {
-            "a1266": "We can execute them on GARUDA Plot, let me just finish this"
-        }
-    }, 
     "a1266": "ts790", 
-    "ts793": {
-        "transcript": {
-            "a1267": "I have"
-        }
-    }, 
     "a1267": "ts793", 
-    "ts796": {
-        "transcript": {
-            "a1268": "probably we can  take up the lab in the  tutorial session, I going to skip all of that because we are running out of time "
-        }
-    }, 
     "a1268": "ts796", 
-    "ts800": {
-        "transcript": {
-            "a1269": "I will put this"
-        }
-    }, 
     "a1269": "ts800", 
-    "ts804": {
-        "transcript": {
-            "a1270": "slides, you can go through this."
-        }
-    }, 
     "a1270": "ts804", 
-    "ts808": {
-        "transcript": {
-            "a1271": "This is the single board heater system that you will be using, we have forty of them, so we have total of"
-        }
-    }, 
     "a1271": "ts808", 
-    "ts812": {
-        "transcript": {
-            "a1272": "960 slots in a day"
-        }
-    }, 
     "a1272": "ts812", 
-    "ts816": {
-        "transcript": {
-            "a1273": "and we slots booking systems, you go book your slot to  do experiment on that."
-        }
-    }, 
     "a1273": "ts816", 
-    "ts821": {
-        "transcript": {
-            "a1274": "So there are some booking rules, you can not go  and block all the slots can't do that, so we have some safety."
-        }
-    }, 
     "a1274": "ts821", 
-    "ts826": {
-        "transcript": {
-            "a1275": "So, What we learned today, Introduction to Process Control, Variables."
-        }, 
-        "summary": {
-            "a1341": "PostSummary"
-        }
-    }, 
     "a1275": "ts826", 
-    "ts830": {
-        "transcript": {
-            "a1276": "Discussed some examples."
-        }, 
-        "summary": {
-            "a1342": "PostSummary"
-        }
-    }, 
     "a1276": "ts830", 
-    "ts834": {
-        "transcript": {
-            "a1277": "Course Organisation, we didn't discuss few things lab and particular details, that will be discussed in one of tutorial sessions , we have Rupak wakde and Ganesh both are there"
-        }, 
-        "summary": {
-            "a1343": "FuturePreview"
-        }
-    }, 
     "a1277": "ts834", 
-    "ts837": {
-        "transcript": {
-            "a1278": "they will handle that session."
-        }
-    }, 
     "a1278": "ts837", 
-    "ts839": {
-        "transcript": {
-            "a1279": "Ok, Thank You."
-        }
-    }, 
     "a1279": "ts839", 
     "a1672": "ts67", 
     "a1283": "ts263", 
@@ -4191,26 +5564,4 @@
     "a1653": "ts602", 
     "a1654": "ts605", 
     "a1655": "ts607", 
-    "a1656": "ts609", 
-    "a1657": "ts611", 
-    "a1658": "ts613", 
-    "a1659": "ts615", 
-    "a1660": "ts653", 
-    "a1661": "ts661", 
-    "a1662": "ts663", 
-    "a1663": "ts665", 
-    "a1664": "ts667", 
-    "a1665": "ts669", 
-    "a1666": "ts690", 
-    "a1667": "ts708", 
-    "a1668": "ts721", 
-    "a1669": "ts723", 
-    "a1670": "ts732", 
-    "a1346": "ts16", 
-    "a1347": "ts23", 
-    "a1348": "ts36", 
-    "a1349": "ts39", 
-    "a1350": "ts41", 
-    "a1351": "ts77", 
-    "a1352": "ts83", 
-    "a1354":
+    "a1656": "ts609"
