@@ -9,7 +9,7 @@
 from xml.etree import ElementTree as ET
 import sys
 import nltk
-import collections
+import collections,nesteddict
 
 #######################################################################
 # Subroutines
@@ -28,10 +28,10 @@ import collections
 
 
    ##tr_dict.update( dict((d[k], k) for k in tr_dict) ) #create bidirectional mapping in same dict
-def getnonindeptier(tiername,type='child',parentdict={}):
+def getnonindeptier(name,tiername,type='child',parentdict={}):
         #get non independent tiers: Introduce, Student , Question ...
         #get independent tier type='independent' : Transcript, Comment, Slide
-        tr_dict,tr_text=[{},{}]
+        udict=nesteddict.NestedDict()
         if type=='independent': #transcript,comment etc
             for tr in tiername:
         # Use Xpath to get at annotations, since they're kinda buried
@@ -41,13 +41,12 @@ def getnonindeptier(tiername,type='child',parentdict={}):
                 tr_time_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF1']
                 tr_ann_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['ANNOTATION_ID']
 
-                tr_dict[tr_ann_ref] =  tr_time_ref
-                tr_text[tr_time_ref]=trtext
-            return [tr_dict,tr_text]
+                udict[tr_time_ref][name][tr_ann_ref]=trtext
+                udict[tr_ann_ref]=tr_time_ref
+
         ## make YAML multidimensional dict dic[tr_time_ref][tr_ann_ref]
 
         if type=='child':
-            exp_dict,exp_text={},{}
             assert len(parentdict)>0
             tr_dict=parentdict
             for exp in tiername:
@@ -56,10 +55,10 @@ def getnonindeptier(tiername,type='child',parentdict={}):
                 exp_time_ref = tr_dict[exp.find('REF_ANNOTATION').attrib['ANNOTATION_REF']]
                 exp_ann_ref = exp.find('REF_ANNOTATION').attrib['ANNOTATION_ID']
 
-                exp_dict[exp_ann_ref]=exp_time_ref
-                exp_text[exp_time_ref]=exptext
+                udict[exp_time_ref][name][exp_ann_ref]=exptext
+                udict[exp_ann_ref]=exp_time_ref
 
-            return [exp_dict,exp_text]
+        return udict
 
 def create_ann_dict(ann_tree):
 
@@ -69,6 +68,19 @@ def create_ann_dict(ann_tree):
     # Get the tiers and the time order
     tiers = ann.getiterator('TIER')
     time = ann.find('TIME_ORDER')
+    times=nesteddict.NestedDict()
+
+##    # Add entries with value 'NONE' for all of the time slots corresponding
+##    # to words that weren't annotated:
+##
+    for ts in time.getiterator('TIME_SLOT'):
+       times[int(ts.attrib['TIME_VALUE'])] = ts.attrib['TIME_SLOT_ID']
+##
+ #   nesteddict.merge(times, dict((times[k], k) for k in times) ) #create bidirectional mapping in same dict
+##
+##
+##    return [times,trtext]
+
 
     # Find the word & MUC-7 annotation tiers, and extract all the
     # annotation nodes from those tiers.  We need the words so we
@@ -76,13 +88,13 @@ def create_ann_dict(ann_tree):
 
     for tier in tiers:
         vars()[eval("str.lower(tier.attrib['TIER_ID'])")]=eval("tier.getiterator('ANNOTATION')")
+        print "tier:"+eval("str.lower(tier.attrib['TIER_ID'])")
 ##        if tier.attrib['TIER_ID'] == 'Transcript':
 ##            transcript = tier.getiterator('ANNOTATION')
 ##        if tier.attrib['TIER_ID'] == 'Explain':
 ##            explain = tier.getiterator('ANNOTATION')
 ##        if tier.attrib['TIER_ID'] == 'Topic':
 ##            topic = tier.getiterator('ANNOTATION')
-    print vars()
 
 ##    assert len(explain)==len(topic)
 ##    assert len(story)==len(storytitle)
@@ -94,53 +106,36 @@ def create_ann_dict(ann_tree):
     # time slots (found via TIME_SLOT_REF1) as begining time
   #  tr_dict,tr_text,exp_dict,exp_text,top_dict,top_text,times= [{} for _ in range(7)] #create n empty dictionaries
 
-    tierstoextract='define,question,answer,interaction,summary,equation,introduce,diagram'.split(',')
+    nonparent_tierstoextract='define,question,answer,interaction,summary,equation,introduce,diagram'.split(',')
+    parent_tierstoextract={'explain':'topic','story':'storytitle'}
+    udict=nesteddict.NestedDict()
+    nesteddict.merge(udict,times)
+
+    transcript_dict=getnonindeptier('transcript',vars()['transcript'],'independent')
+    #udict.update(transcript_dict)
+    udict =nesteddict.merge(udict,transcript_dict)
+
+    for t in nonparent_tierstoextract:
+         vars()[t+'_dict']=eval("getnonindeptier(t,eval(t),'child',transcript_dict)")
+        # udict.update(vars()[t+'_dict'])
+         udict =nesteddict.merge(udict,vars()[t+'_dict'])
 
 
-    transcript_dict,transcript_text=getnonindeptier(vars()['transcript'],'independent')
-
-    for t in tierstoextract:
-        vars()[t+'_dict'],vars()[t+'_text']= eval("getnonindeptier(eval(t),'child',transcript_dict)")
-
-
-##    def_dict,def_text=getnonindeptier(define,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(question,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(answer,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(interaction,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(summary,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(equation,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(introduce,'child',tr_dict)
-##    def_dict,def_text=getnonindeptier(diagram,'child',tr_dict)
-
-    explain_dict,explain_text=getnonindeptier(vars()['explain'],'child',transcript_dict)
-
-    topic_dict,topic_text=getnonindeptier(vars()['topic'],'child',explain_dict)
-
-
-    story_dict,story_text=getnonindeptier(vars()['story'],'child',transcript_dict)
-
-    storytitle_dict,storytitle_text=getnonindeptier(vars()['storytitle'],'child',story_dict)
-    childs=[]
-
-    for t in tierstoextract:
-       childs.append(vars()[t+'_dict'])
-       childs.append(vars()[t+'_text'])
-
-
-    return[len(transcript_dict),transcript_dict,transcript_text,explain_dict,explain_text,topic_dict,topic_text,story_dict,story_text,storytitle_dict,storytitle_text].append(childs)
+    for p,c in parent_tierstoextract.iteritems():
+        parent_dict=getnonindeptier(p,vars()[p],'child',transcript_dict)
+        child_dict=getnonindeptier(c,vars()[c],'child',parent_dict)
+##        udict.update(parent_dict)
+##        udict.update(child_dict)
+        udict =nesteddict.merge(udict,parent_dict)
+        udict =nesteddict.merge(udict,child_dict)
 
 
 
-##    # Add entries with value 'NONE' for all of the time slots corresponding
-##    # to words that weren't annotated:
-##
-##    for ts in time.getiterator('TIME_SLOT'):
-##       times[int(ts.attrib['TIME_VALUE'])] = ts.attrib['TIME_SLOT_ID']
-##
-##    times.update( dict((d[k], k) for k in times) ) #create bidirectional mapping in same dict
-##
-##
-##    return [times,trtext]
+
+    return[len(transcript_dict),udict]
+
+
+
 
 # Sub-routine to create annotation task format required by
 # nltk.metrics.agreement: This is a list of tuples with the following
@@ -234,15 +229,31 @@ ann_tree2 = ET.parse(sys.argv[2])
 
 # Output file (for debugging for now)
 
-outfile = open('iaa.txt','w')
+outfile = open('op.txt','w')
+outfileyaml1=open(sys.argv[1]+'.yaml','w')
+
+outfileyaml2=open(sys.argv[2]+'.yaml','w')
 
 # Use the subroutine to get the annotations we're interested in,
 # indexed by the time stamp of the start of the region they're associated
 # with.
 
-print create_ann_dict(ann_tree1)
-print create_ann_dict(ann_tree2)
+import pprint
+anndict=create_ann_dict(ann_tree1)[1]
+import json
+json.dump(anndict,outfile,indent=4)
 
+exit()
+import pyaml
+anndata1= pyaml.dump(create_ann_dict(ann_tree1)[1])
+anndata2=pyaml.dump(create_ann_dict(ann_tree2)[1])
+
+outfileyaml1.write(anndata1)
+outfileyaml2.write(anndata2)
+
+
+
+exit()
 # Check that we have the same number of words in each file:
 
 if words1 != words2:
