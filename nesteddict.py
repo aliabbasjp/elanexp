@@ -98,6 +98,10 @@ def merge(a, b):
                         a[key] = b[key]
             else:
                 raise YamlReaderError('Cannot merge non-dict "%s" into dict "%s"' % (b, a))
+        elif isinstance(a,tuple):
+            # tuples as keys must be merged
+            if isinstance(b, tuple):
+                raise YamlReaderError('NOT IMPLEMENTED "%s" into "%s"' % (b, a))
         else:
             raise YamlReaderError('NOT IMPLEMENTED "%s" into "%s"' % (b, a))
     except TypeError, e:
