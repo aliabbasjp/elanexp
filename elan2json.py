@@ -143,10 +143,14 @@ def str2dict(contents):
         return d
 
 @begin.start
-def elan2json(eafpath='E:\elan projects\L1\L1v1_DIP.eaf',independent_tiers='transcript,comment,slide',nonparent_tiers='define,question,answer,interaction,summary,equation,introduce,diagram',parent_tiers='explain:topic,story:storytitle',jsonout=True, dirpath=None):
+def elan2json(eafpath='E:\elan projects\L1\L1v1_DIP.eaf',independent_tiers='transcript,comment,slide',nonparent_tiers='define,question,answer,interaction,summary,equation,introduce,diagram',parent_tiers='explain:topic,story:storytitle',skip='slide,comment',jsonout=True, dirpath=None):
 
 
     independent_tiers=independent_tiers.split(',')
+    for s in skip.split(','):
+        independent_tiers.remove(s)
+
+
     nonparent_tiers=nonparent_tiers.split(',')
     parent_tiers=str2dict(parent_tiers)
     if dirpath is None:

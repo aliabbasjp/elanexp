@@ -9,16 +9,31 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
-import naturalsort,json,sys
-
-def main():
-    pass
-
-if __name__ == '__main__':
-    main()
-
-
-
+import json,sys,begin
+import datadiff
+tags="""anecdote
+example
+demo
+preview
+GeneralReview
+FuturePreview
+postsummary
+FocusingInformation
+StimulatingThought
+answer
+Aims&Objectives
+motivation
+Student Question
+Student Answer
+Other
+diagram
+equation
+Describing&Interpreting
+Recounting
+Reporting
+define
+""".lower().splitlines()
+tags=set(tags)
 # Sub-routine to create annotation task format required by
 # nltk.metrics.agreement: This is a list of tuples with the following
 # elements: annotator, word, label where we will be representing the
@@ -100,31 +115,79 @@ def count_labels(ann_dict):
 
     return counts
 
-def readjson(jsoneaf):
+def getdict2set(d):
+
+        assigned=set()
+
+        errorlist=[]
+
+        for (k,v) in d.iteritems():
+            if k =='explain'or k=='summary' or k=='introduce' or k=='story' or k=='question' or k=='interaction':
+                if  set([str(v).lower()]).issubset(tags): #store only value for multivalued tags
+                    assigned.add(v.lower())
+                else:
+                    errorlist.append('Error: Multivalued tag <{0}> is assigned a wrong value <{1}>'.format(str(k),str(v)))
+
+            elif k!='storytitle' and k!='topic': #store tag for single valued tags
+                 if  set([str(k)]).issubset(tags):
+                    assigned.add(k.lower())
+                 else:
+                    errorlist.append('Error: Multivalued tag {0} is incorrect and has value {1}'.format(str(k),str(v)))
+
+
+
+            #if  len(assigned)>0:
+                #print assigned
+##                if not (assigned.issubset(tags)):
+##                    print 'Error:Wrong key:{0} for value:{1} in dict'.format(k,v)
+
+        assert len( assigned)<18
+        return [errorlist,assigned]
+
+
+begin.subcommand
+def readjson(eafpath='E:\elan projects\L1\L1v1_DIP.eaf.319.json',verbose='no'):
+
+
     #jsoneaf:json dump for eaf file#
 
-##    def filterout(j):
-##        if 'ts' not in j and 'a' not in j:
-##         return True
-##
-##    beg_times=filter(filterout, jsoneaf.keys())
-##    beg_times.sort(key=naturalsort.natural_keys)
-##
-    newlist=[]
-    cnt=0
-    while (jsoneaf.has_key('ts'+str(cnt))):
-        if len( jsoneaf['ts'+str(cnt)])>1:
-            newlist.append(jsoneaf['ts'+str(cnt)])
-        cnt=cnt+1
-        print cnt
+    jsoneaf=json.load(open(eafpath))
+    import collections
+    d=collections.OrderedDict()
+    for (k,v) in jsoneaf.iteritems():
+        savtr,savsli="",""
 
-    print newlist
 
+        if v.has_key('transcript'):
+            savtr=v['transcript']
+            del v['transcript']
+        if v.has_key('slide'):
+            savsli=v['slide']
+            del v['slide']
+
+
+
+
+        [errors,d[k]]=getdict2set(v)
+        if verbose=='yes':
+            import nesteddict
+            savdic={k:[savtr,savsli]}
+            d[k]=nesteddict.merge(savdic,{k:d[k]})
+
+        if len(errors)>0:
+            print "At time {0}: {1}".format(k,errors)
+
+
+
+    #print d
+    return d
+
+
+
+@begin.start
 def main():
-    readjson(json.load(open(sys.argv[1])))
+    print datadiff.diff_dict(readjson('E:\elan projects\L2\submissions\extracted\L2_100020027.eaf.379.json'),readjson('E:\elan projects\L2\submissions\extracted\L2_100020049.eaf.379.json'))
 
 
-if __name__ == '__main__':
-    main()
 
 
