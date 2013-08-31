@@ -1,0 +1,24 @@
+usage: elan2json.py [-h] [--eafpath EAFPATH]
+                    [--independent_tiers INDEPENDENT_TIERS]
+                    [--nonparent_tiers NONPARENT_TIERS]
+                    [--parent_tiers PARENT_TIERS]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --eafpath EAFPATH, -e EAFPATH
+                        (default: E:\elan projects\L1\L1v1_DIP.eaf)
+  --independent_tiers INDEPENDENT_TIERS, -i INDEPENDENT_TIERS
+                        (default: transcript,comment,slide)
+  --nonparent_tiers NONPARENT_TIERS, -n NONPARENT_TIERS
+                        (default: define,question,answer,interaction,summary,e
+                        quation,introduce,diagram)
+  --parent_tiers PARENT_TIERS, -p PARENT_TIERS
+                        (default: explain:topic,story:storytitle)
+						
+						
+
+ elan2json.py  -i transcript -n define -p #
+ output:E:\elan projects\L1\L1v1_DIP.eaf.319.json
+ 
+  elan2json.py  -i comment -n '' -p #
+ output:E:\elan projects\L1\L1v1_DIP.eaf.4.json

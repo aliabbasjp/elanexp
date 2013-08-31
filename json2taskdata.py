@@ -9,9 +9,11 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 #!/usr/bin/env python
+import nltk
+from nltk.metrics.agreement import AnnotationTask
 import json,sys,begin
 import datadiff
-tags="""anecdote
+tagslist="""anecdote
 example
 demo
 preview
@@ -33,50 +35,101 @@ Recounting
 Reporting
 define
 """.lower().splitlines()
-tags=set(tags)
+tags=set(tagslist)
 # Sub-routine to create annotation task format required by
 # nltk.metrics.agreement: This is a list of tuples with the following
 # elements: annotator, word, label where we will be representing the
 # words with their initial time stamps
 
-# This sub-routine will take in the muc annotation dictionary
+
+def set2groupedset(tagset):
+    grpset=set()
+    for t in tagset:
+        def s(t):
+            return{
+        'anecdote':'story',
+        'example':'story',
+        'demo':'story',
+        'preview':'summary',
+		'generalreview':'summary',
+		'futurepreview':'summary',
+		'postsummary':'summary',
+		'focusinginformation':'question',
+		'stimulatingthought':'question',
+#        'answer':'answer'
+		'aims&objectives':'introduce',
+		'motivation':'introduce',
+		'student question':'interaction',
+		'student answer':'interaction',
+		'other':'interaction',
+#		'diagram':'visual',
+#		'equation':'visual',
+		'describing&interpreting':'explain',
+		'recounting':'explain',
+		'reporting':'explain'
+#		'define':'define'
+                }.get(t, t)
+
+        grpset.add(s(t))
+    return frozenset(grpset)
+
+
+
+def filteredset(tagset,allowed):
+    grpset=set()
+    for t in tagset:
+        if t in allowed:
+            grpset.add(t)
+    return frozenset(grpset)
+
+
+def create_task_data(elan_dict,task_type='all',allowed='define,describing&interpreting',skipped='',annotator='annotator1'):
+# This sub-routine will take in the  annotation dictionary
 # for one annotator and produce a list of tuples for just
 # that annotator.  It takes two additional arguments: the label
 # to use for the annotator and the task_type, which determines
 # what we are measuring agreement over.
 
 # Task_type controls what we put into the agreement data set:
-#  all : one entry per word, with labels
-#  binary : one entry per word, not distinguishing labels (i.e.,
-#           replacing all non-'NONE' entries with 'ENTITY')
-#  labels : only entries with labels
+#  all : one entry per word, with labels (18 categories?)
+#  grouped : Only parent group representing the child labels
+#  filtered : A limited set of tags which would be the only ones that will be extracted
+#  filtered-grouped : same as filtered but also grouped
 
-def create_task_data(muc_dict,annotator,task_type):
+#  filtering rules
+#  allowed:  if string CSV then extract only allowed tags, else extract all tags(same as to all)
+#  skipped: allow all except the ones to skip listed in CSV
+
+    skipped=skipped.split(',')
 
     # The return value will be a list of tuples.
+    if type(allowed)==str:
+        allowed=set(allowed.split(','))
+    else:
+        allowed=set(tags)
+    if len(skipped)>1:
+        allowed=set(tags)
+        allowed=allowed-set(skipped)
+        allowed=set(allowed).difference(set(skipped))
+
     task_data = []
 
-    # Step through the input dictionary one key at a time:
-    # ~*~
 
-        # If the task_type is 'all' or 'labels', then store
-        # the value muc_dict[key] as the label to return.
-        # ~*~
 
-        # If the task type is 'binary', the label to return
-        # should be 'NONE' (if that's what it is) or 'ENTITY'
-        # otherwise.
-        # ~*~
 
-        # Create the task item, which is a triple of the form
-        # [annotator, key, label]
-        # ~*~
+    for (k,v) in elan_dict.iteritems():
+        if task_type=='all':
+            task_data.append([annotator,k,v])
+        elif task_type=='grouped':
+            task_data.append([annotator,k,set2groupedset(v)])
+        elif task_type=='filtered':
+            task_data.append([annotator,k,filteredset(v,allowed)])
+        elif task_type=='filtered-grouped':
+             task_data.append([annotator,k,set2groupedset(filteredset(v,allowed))])
+        else:
+            raise Exception( "Wrong option <tasktype>" )
 
-        # Now decide whether to add the task item to the list
-        # of task_data.  If the task_type is 'all' or 'binary',
-        # then add it.  If it's 'labels', then add it only if
-        # the label isn't 'NONE'.
-        # ~*~
+
 
 
     return task_data
@@ -142,7 +195,7 @@ def getdict2set(d):
 ##                    print 'Error:Wrong key:{0} for value:{1} in dict'.format(k,v)
 
         assert len( assigned)<18
-        return [errorlist,assigned]
+        return [errorlist,frozenset(assigned)]
 
 
 begin.subcommand
@@ -182,11 +235,26 @@ def readjson(eafpath='E:\elan projects\L1\L1v1_DIP.eaf.319.json',verbose='no'):
     #print d
     return d
 
+##27,49
 
 
 @begin.start
 def main():
-    print datadiff.diff_dict(readjson('E:\elan projects\L2\submissions\extracted\L2_100020027.eaf.379.json'),readjson('E:\elan projects\L2\submissions\extracted\L2_100020049.eaf.379.json'))
+    #print datadiff.diff_dict(readjson('E:\elan projects\L2\submissions\extracted\L2_100020027.eaf.379.json'),readjson('E:\elan projects\L2\submissions\extracted\L2_100020049.eaf.379.json'))
+    s1=readjson('E:\elan projects\L2\submissions\extracted\L2_100020027.eaf.379.json')
+    s2=readjson('E:\elan projects\L2\submissions\extracted\L2_100020049.eaf.379.json')
+    #s2=readjson('E:\elan projects\L2\L2v1f_DIP.eaf.379.json')
+    #s2=readjson('E:\elan projects\L2\L2v1_PRI.eaf.379.json')
+    s1_data= create_task_data(s1,task_type='grouped',allowed='define',annotator='s1')
+    s2_data=create_task_data(s2,task_type='grouped',allowed='define',annotator='s2')
+    task=AnnotationTask(data=s1_data+s2_data,distance=nltk.metrics.distance.masi_distance_mod)
+  #  print "Observed Agreement:{0}".format( task.Ao('s1','s2'))
+    print "Kappa:{0}".format(task.kappa())
+    print "Alpha:{0}".format(task.alpha())
+    print "Observed Avg Agreement over all:{0}".format(task.avg_Ao())
+
+
+
 
 
 

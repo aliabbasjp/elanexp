@@ -133,7 +133,7 @@ def elan2dict(eafpath,independent_tiers,nonparent_tierstoextract,parent_tierstoe
     return[len(vars()[independent_tiers[0]+'_dict'])/2,udict]  #return with the count of the first independent tier
 
 def str2dict(contents):
-    if contents=='#': ## # means empty
+    if len(contents)<=2: ## # means empty
         return {}
     else:
 
@@ -145,6 +145,7 @@ def str2dict(contents):
 @begin.start
 def elan2json(eafpath='E:\elan projects\L1\L1v1_DIP.eaf',independent_tiers='transcript,comment,slide',nonparent_tiers='define,question,answer,interaction,summary,equation,introduce,diagram',parent_tiers='explain:topic,story:storytitle',skip='slide,comment',jsonout=True, dirpath=None):
 
+    print (eafpath)
 
     independent_tiers=independent_tiers.split(',')
     for s in skip.split(','):
