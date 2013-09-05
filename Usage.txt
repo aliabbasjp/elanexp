@@ -22,3 +22,7 @@ optional arguments:
  
   elan2json.py  -i comment -n '' -p #
  output:E:\elan projects\L1\L1v1_DIP.eaf.4.json
+
+ 
+checkeaf.exe -h
+>checkeaf.exe -e "E:\elan projects\L2\L2_100020012.eaf"

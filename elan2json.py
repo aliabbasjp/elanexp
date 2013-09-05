@@ -14,52 +14,59 @@
 # Input: one  .eaf files
 # Output: json file
 from __future__ import print_function
-
 from xml.etree import ElementTree as ET
 import begin
-import nltk
-import collections,nesteddict
 
+import collections,nesteddict
+from globalerror import Errors
 #######################################################################
 # Subroutines
 
-def getnonindeptier(name,tiername,times,type='child',parentdict={}):
-        #get non independent tiers: Introduce, Student , Question ...
-        #get independent tier type='independent' : Transcript, Comment, Slide
-        udict=nesteddict.NestedDict()
-        #print 'tiers:::::::::::::::::::::'+str(tiername)
-        if type=='independent': #transcript,comment etc
-            for tr in tiername:
-        # Use Xpath to get at annotations, since they're kinda buried
-        # Relying on the fact that there is only one of each of these
-        # subelements in the scheme.  Possibly a wrong assumption.
-                trtext = tr.find('ALIGNABLE_ANNOTATION/ANNOTATION_VALUE').text
-                tr_time_ref_beg = times[tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF1']]
-                tr_time_ref_end = times[tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF2']]
-                tr_ann_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['ANNOTATION_ID']
+def getnonindeptier(name,tiername,times,typetier='child',parentdict=None):
+    parentdict=parentdict or None
+
+    #get non independent tiers: Introduce, Student , Question ...
+    #get independent tier type='independent' : Transcript, Comment, Slide
+    udict=nesteddict.NestedDict()
+    #print 'tiers:::::::::::::::::::::'+str(tiername)
+    if typetier=='independent': #transcript,comment etc
+        for tr in tiername:
+    # Use Xpath to get at annotations, since they're kinda buried
+    # Relying on the fact that there is only one of each of these
+    # subelements in the scheme.  Possibly a wrong assumption.
+            trtext = tr.find('ALIGNABLE_ANNOTATION/ANNOTATION_VALUE').text
+            tr_time_ref_beg = times[tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF1']]
+            tr_time_ref_end = times[tr.find('ALIGNABLE_ANNOTATION').attrib['TIME_SLOT_REF2']]
+            tr_ann_ref = tr.find('ALIGNABLE_ANNOTATION').attrib['ANNOTATION_ID']
 ##                mutabledict = {'beg':tr_time_ref_beg,'end':tr_time_ref_end}
 ##                intervals=frozenset(mutabledict.items())
-                intervals=(tr_time_ref_beg,tr_time_ref_end)
 
 
-                udict[tr_time_ref_beg][name]=[tr_time_ref_end, trtext]
-                udict[tr_ann_ref]=tr_time_ref_beg
+            udict[tr_time_ref_beg][name]=[tr_time_ref_end, trtext]
+            udict[tr_ann_ref]=tr_time_ref_beg
 
-        ## make YAML multidimensional dict dic[tr_time_ref][tr_ann_ref]
+    ## make YAML multidimensional dict dic[tr_time_ref][tr_ann_ref]
 
-        if type=='child':
-            if len(parentdict)>0:
-                tr_dict=parentdict
-                for exp in tiername:
+    if typetier=='child':
+     if  parentdict:
+        if len(parentdict)>0:
+
+            tr_dict=parentdict
+            for exp in tiername:
+                try:
                     exptext = exp.find('REF_ANNOTATION/ANNOTATION_VALUE').text
+                except(AttributeError):
+                    print ('\nError: Incorrect tier: {0}'.format(name))
+                    Errors['Error: Incorrect tier']=Errors.get('Error: Incorrect tier',0)+1
+                    return udict
 
-                    exp_time_ref = tr_dict[exp.find('REF_ANNOTATION').attrib['ANNOTATION_REF']]
-                    exp_ann_ref = exp.find('REF_ANNOTATION').attrib['ANNOTATION_ID']
+                exp_time_ref = tr_dict[exp.find('REF_ANNOTATION').attrib['ANNOTATION_REF']]
+                exp_ann_ref = exp.find('REF_ANNOTATION').attrib['ANNOTATION_ID']
 
-                    udict[exp_time_ref][name]=exptext
-                    udict[exp_ann_ref]=exp_time_ref
+                udict[exp_time_ref][name]=exptext
+                udict[exp_ann_ref]=exp_time_ref
 
-        return udict
+    return udict
 
 def elan2dict(eafpath,independent_tiers,nonparent_tierstoextract,parent_tierstoextract):
     ann_tree = ET.parse(eafpath)
@@ -73,7 +80,7 @@ def elan2dict(eafpath,independent_tiers,nonparent_tierstoextract,parent_tierstoe
     times=nesteddict.NestedDict()
 
     for ts in time.getiterator('TIME_SLOT'):
-       times[ts.attrib['TIME_SLOT_ID']] = ts.attrib['TIME_VALUE']
+        times[ts.attrib['TIME_SLOT_ID']] = ts.attrib['TIME_VALUE']
 
 #    nesteddict.merge(times, dict((times[k], [k]) for k in times) ) #create bidirectional mapping in same dict
 
@@ -99,21 +106,25 @@ def elan2dict(eafpath,independent_tiers,nonparent_tierstoextract,parent_tierstoe
             vars()[i+'_dict']=eval("getnonindeptier(i,eval(i),times,'independent')")
             udict =nesteddict.merge(udict,vars()[i+'_dict'])
         else:
+            print('\n')
             print (i +" : an Independent Tier is empty....")
 
     for t in nonparent_tierstoextract:
         if len(eval(t)) >0:
-             vars()[t+'_dict']=eval("getnonindeptier(t,eval(t),times,'child',transcript_dict)")
+            vars()[t+'_dict']=eval("getnonindeptier(t,eval(t),times,'child',transcript_dict)")
             # udict.update(vars()[t+'_dict'])
-             udict =nesteddict.merge(udict,vars()[t+'_dict'])
+            udict =nesteddict.merge(udict,vars()[t+'_dict'])
         else:
+            print('\n')
             print( t +" a non parent tier Is empty....")
 
     for p,c in parent_tierstoextract.iteritems():
         parent_len=len(eval(p))
         child_len=len(eval(c))
+
         if parent_len!=child_len:
-            print( " Warning Mismatch of parent-child length in  dependent tiers:",p,',',c)
+            print( " \nError: Mismatch of parent-child length in  dependent tiers:",p,',',c)
+            Errors['Error: Mismatch of parent-child length in  dependent tiers:']=Errors.get('Error: Mismatch of parent-child length in  dependent tiers:',0)+1
 
         if  parent_len>0 or child_len >0:
             parent_dict=getnonindeptier(p,vars()[p],times,'child',vars()['transcript_dict'])
@@ -121,14 +132,15 @@ def elan2dict(eafpath,independent_tiers,nonparent_tierstoextract,parent_tierstoe
             udict =nesteddict.merge(udict,parent_dict)
             udict =nesteddict.merge(udict,child_dict)
         else:
-            print( 'Missing parent or child:',p,',',c)
+            print( '\nError:Missing parent or child:',p,',',c)
+            Errors['Error:Missing parent or child:']=Errors.get('Error:Missing parent or child:',0)+1
 
     ##REMOVE the timing and annotation labels ts1,a1
     for k in udict.keys():
         if k.startswith('ts') or k.startswith('a'):
             del udict[k]
 
-    udict=collections.OrderedDict(sorted(udict.items()))
+    udict=collections.OrderedDict(sorted(udict.items(),key=lambda a: int(a[0])))
 
     return[len(vars()[independent_tiers[0]+'_dict'])/2,udict]  #return with the count of the first independent tier
 
@@ -143,8 +155,9 @@ def str2dict(contents):
         return d
 
 @begin.start
-def elan2json(eafpath='E:\elan projects\L1\L1v1_DIP.eaf',independent_tiers='transcript,comment,slide',nonparent_tiers='define,question,answer,interaction,summary,equation,introduce,diagram',parent_tiers='explain:topic,story:storytitle',skip='slide,comment',jsonout=True, dirpath=None):
+def elan2json(eafpath=r'E:\elan projects\L1\L1v1_DIP.eaf',independent_tiers='transcript,comment,slide',nonparent_tiers='define,question,answer,interaction,summary,equation,introduce,diagram',parent_tiers='explain:topic,story:storytitle',skip='slide,comment',jsonout=True, dirpath=None):
 
+    #sample : -e "e:\elan projects\l2\L2v1f_DIP.eaf" -i transcript,comment,slide,define,explain,question,answer,summary,story,equation,introduce,diagram,interaction -n '' -p ''
     print (eafpath)
 
     independent_tiers=independent_tiers.split(',')
@@ -192,10 +205,11 @@ def main():
     independent_tiers='transcript,comment,slide'.split(',')
     nonparent_tierstoextract='define,question,answer,interaction,summary,equation,introduce,diagram'.split(',')
     parent_tierstoextract={'explain':'topic','story':'storytitle'}
-    begin.start
+
     elan2json(independent_tiers='transcript')
 
 
 
 ##if __name__ == '__main__':
 ##    main()
+
