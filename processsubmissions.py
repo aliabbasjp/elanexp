@@ -1,17 +1,17 @@
-#-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:
-#
-# Author:      ALI
-#
-# Created:     06/09/2013
-# Copyright:   (c) ALI 2013
-# Licence:     <your licence>
-#-------------------------------------------------------------------------------
+"""
+.. module:: processsubmissions.py
+   :description:
+   :date: 09/09/2013
+   :license: MIT License
+
+.. moduleauthor:: Aliabbas Petiwala <aliabbas@iitb.ac.in>
+
+"""
 #!/usr/bin/env python
 import itertools,collections
+from joblib import Memory
 from nltk.metrics.agreement import AnnotationTask
-import elan2json,begin,os,nltk,cPickle,futures
+import elan2json,begin,os,nltk,cPickle,futures,yaml
 import json2taskdata
 rolls=['100020003',
  '100020006',
@@ -42,6 +42,16 @@ Agree = collections.namedtuple('Agree', ['kappa', 'alpha','avg_ao'], verbose=Tru
 
 
 def copypassedfiles(reldstdir='',srcdir=r'E:\elan projects\L2\resubmission',rollnos=None):
+    """converts the shortlisted eaf files to json and copies to a destination dir
+
+        Args:
+           reldstdir (str):  destination directory to pass the correct json files
+           rollnos (list): list of passed rollnos (correctly annotated files)
+
+        Returns:
+          list of files with full json path pointing to destination directory
+
+        """
     rollnos=rollnos or None or rolls
     dstdir=os.path.join(srcdir,reldstdir)
     pattern= "|".join("L2_%s\.eaf$" % w for w in rolls)
@@ -60,69 +70,125 @@ def copypassedfiles(reldstdir='',srcdir=r'E:\elan projects\L2\resubmission',roll
         return map(lambda f: os.path.join('\\'.join(f.split('\\')[:-1]),reldstdir+'\\'+f.split('\\')[-1]),res)
 
     return res
+def csvdump(dic,fil):
+    import csv
 
-def getagreement(task):
-    return Agree(kappa=task.kappa(),alpha=task.alpha(),avg_ao=task.avg_Ao())
+    f = csv.writer(fil)
 
-def json2agreementmatrix(jsonflist):
-    from joblib import Memory
-    mem = Memory(cachedir=os.path.dirname(jsonflist[0]))
+        # Write CSV Header, If you dont need that, remove this line
+    f.writerow(["annotators", "alpha", "kappa", "AvgObs"])
+
+    for k,v in dic.items():
+        f.writerow([','.join(list(k)),v[0],v[1],v[2]])
+    fil.close()
+
+
+def getagreement(tpl,datadir):
+    """Get agreement values for annotators in the :data:'tpl' list
+
+    Args:
+       tpl (list):  combination group of annotators
+       datadir (str): Cache data directory used by joblib
+
+    Returns:
+       namedtuple defined as ``Agree = collections.namedtuple('Agree', ['kappa', 'alpha','avg_ao'], verbose=True)``
+    """
+
+    mem = Memory(cachedir=datadir)
     readjson=mem.cache(json2taskdata.readjson,mmap_mode='r')
     create_task_data= mem.cache(json2taskdata.create_task_data)
     count_occurrances=mem.cache(json2taskdata.count_occurrances)
     count_labels=mem.cache(json2taskdata.count_labels)
-    detaildata={}
 
     annotators=set()
-    future_dict={}
+    lectask=[]
+    #-------------------------------------------------------------------------------
+    # for each annotator in group tpl
+    #-------------------------------------------------------------------------------
+
+    for stditem in tpl:
+        aname=stditem.split('.')[0][3:][-2:]
+        annotators.add(aname)
+        lecdict=readjson(stditem)
+        newlectask= create_task_data(lecdict,task_type='grouped',annotator=aname)
+##        label_data=json2taskdata.create_labels_list(newlectask)
+##        abscount=count_occurrances(str(label_data))
+##        setcount=count_labels(newlectask)
+        lectask=lectask+newlectask
+
+    task=AnnotationTask(data=lectask,distance=nltk.metrics.distance.masi_distance_mod)
+
+    return  {frozenset(annotators): Agree(task.kappa(),task.alpha(),task.avg_Ao())}
+
+def json2agreementmatrix(jsonflist,start=2,maxlen=0):
+    """ Multi process function to convert json to
+    agreement values (alpha,kappa,Avg Observed agreement)
+
+        Args:
+           jsonflist (list):  list of json filenames.
+           start (int): combination group size to begin with.
+           maxlen(int): maximum count starting from :data:'start'
+
+
+        Kwargs:
+           state (bool): Current state to be in.
+
+        Returns:
+           A dict mapping annotator combination to agreement values then pickled.
+
+        Raises:
+           Future.Exception
+
+
+        """
+
+
+    future_list=[]
+    detaildata={}
 
     flen=len(jsonflist)
-    maxlen=flen
 
-    with futures.ProcessPoolExecutor(max_workers=maxlen/2) as executor:
-        while maxlen>1:
 
-            for tpl in list(itertools.combinations(jsonflist,maxlen)):
-                annotators=set()
-                lectask=[]
-                for stditem in tpl:
-                    aname=stditem.split('.')[0][3:][-2:]
-                    annotators.add(aname)
-                    lecdict=readjson(stditem)
-                    newlectask= create_task_data(lecdict,task_type='grouped',annotator=aname)
-                    label_data=json2taskdata.create_labels_list(newlectask)
-                    abscount=count_occurrances(str(label_data))
-                    setcount=count_labels(newlectask)
-                    lectask=lectask+newlectask
-
-                task=AnnotationTask(data=lectask,distance=nltk.metrics.distance.masi_distance_mod)
-
-                future_dict[executor.submit(getagreement,task)]=frozenset(annotators)
+    assert start+maxlen-2<=flen
 
 
 
+    with futures.ProcessPoolExecutor() as executor:
+        for cnt in range(start,start+maxlen+1):
+            for tpl in list(itertools.combinations(jsonflist,cnt)):
+                future_list.append(executor.submit(getagreement,tpl,os.path.dirname(jsonflist[0])))
 
-            maxlen=maxlen-1
-        for future in futures.as_completed(future_dict):
+
+        for future in futures.as_completed(future_list):
             if future.exception() is not None:
-                print('%r generated an exception: %s' % (url,
+                print('%r generated an exception: %s' % (future,
                                                      future.exception()))
             else:
 
-                detaildata[future_dict[future]]=future.result()
+                detaildata.update( future.result())
 
 
-    cPickle.dump(detaildata,open(os.path.dirname(jsonflist[0])+'\\out.picl','w'))
+    cPickle.dump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.picl','w'))
+    yaml.dump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.yaml','w'))
+    csvdump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.csv','w'))
+    print "Dumped output"
+    return detaildata
 
 
 @begin.start
 def main():
     subsdir=r'E:\elan projects\L2\resubmission'
-    dstdir=r'passed'
+    dstdir=os.path.join(subsdir,r'passed')
     #copypassedfiles(dstdir,subsdir)
     import glob
-    jsonflist=glob.glob(os.path.join(subsdir,dstdir)+'\\'+r'*.379.json')
-    json2agreementmatrix(jsonflist)
+    jsonflist=glob.glob(dstdir+'\\'+r'*.379.json')
+    mem = Memory(cachedir=dstdir)
+    json2agreementmatrix_cached=mem.cache(json2agreementmatrix)
+
+    c=json2agreementmatrix_cached(jsonflist)
+    print c
+
+
 
 
 
