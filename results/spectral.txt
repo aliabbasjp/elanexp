@@ -1,0 +1,9 @@
+﻿Spectrul clustering
+
+discretize:
+
+[(0, 'interaction'), (0, 'summary'), (1, 'define'), (1, 'introduce'), (1, 'story'), (2, 'answer'), (2, 'visual'), (3, 'explain'), (3, 'question'), (4, 'empty')]
+
+kmeans:
+
+[(0, 'introduce'), (0, 'story'), (1, 'interaction'), (1, 'summary'), (2, 'answer'), (2, 'define'), (2, 'visual'), (3, 'explain'), (3, 'question'), (4, 'empty')]

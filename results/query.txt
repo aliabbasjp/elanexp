@@ -1,0 +1,1 @@
+csvquery -q select graphs.vsz nonsymmop.csv r-agreement.csv r-confusion.csv summary.xls summaryop.csv symmyop.csv from csv NATURAL JOIN csv2 where type = nonsymmetric r-agreement.csv r-confusion.csv > nonsymmop.csv
