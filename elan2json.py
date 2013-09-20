@@ -197,11 +197,6 @@ def main():
 
     # Read in the input files as XML sturctures
 
-    # Output file (for debugging for now)
-
-    # Use the subroutine to get the annotations we're interested in,
-    # indexed by the time stamp of the start of the region they're associated
-    # with.
     independent_tiers='transcript,comment,slide'.split(',')
     nonparent_tierstoextract='define,question,answer,interaction,summary,equation,introduce,diagram'.split(',')
     parent_tierstoextract={'explain':'topic','story':'storytitle'}

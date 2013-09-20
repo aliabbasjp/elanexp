@@ -143,12 +143,41 @@ def create_task_data(elan_dict,task_type='all',allowed='define,describing&interp
 # the input required by nltk.metrics.ConfusionMatrix.  Assume
 # that ann_dict has timestamps (integers) as the keys.
 
+
 def create_labels_list(task_data):
 
     labels_list = [row[2] for row in task_data]
-
-
     return labels_list
+
+def listforlabel(label,labels_list):
+    retlist=[]
+    for i in labels_list:
+        if i.issuperset(set(label)):
+            retlist.append(label)
+        else:
+            retlist.append('empty')
+
+
+
+def nulltoempty(label):
+    if len(label)==0:
+        return 'empty'
+    else:
+        return label
+
+def create_singlevalued_labels_dict(labels_list):
+    labels_list=map(nulltoempty,labels_list)
+    uniquelabels=set()
+    for i in labels_list:
+        uniquelabels.update(set(i))
+
+    labels_dict={}
+
+    for u in uniquelabels:
+        labels_dict[u]=listforlabel(u,labels_list)
+
+    return labels_dict
+
 
 # Subroutine to count use of each label by an annotator
 # Returns a dictionary mapping labels to their counts in

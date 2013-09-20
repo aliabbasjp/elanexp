@@ -111,9 +111,9 @@ def getagreement(tpl,datadir):
         annotators.add(aname)
         lecdict=readjson(stditem)
         newlectask= create_task_data(lecdict,task_type='grouped',annotator=aname)
-##        label_data=json2taskdata.create_labels_list(newlectask)
-##        abscount=count_occurrances(str(label_data))
-##        setcount=count_labels(newlectask)
+        label_data=json2taskdata.create_labels_list(newlectask)
+        abscount=count_occurrances(str(label_data))
+        setcount=count_labels(newlectask)
         lectask=lectask+newlectask
 
     task=AnnotationTask(data=lectask,distance=nltk.metrics.distance.masi_distance_mod)
@@ -121,7 +121,7 @@ def getagreement(tpl,datadir):
     return  {frozenset(annotators): Agree(task.kappa(),task.alpha(),task.avg_Ao())}
 
 def json2agreementmatrix(jsonflist,start=2,maxlen=0):
-    """ Multi process function to convert json to
+    """ Multi process function to convert 2 json file annotation combination to
     agreement values (alpha,kappa,Avg Observed agreement)
 
         Args:
@@ -138,11 +138,7 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
 
         Raises:
            Future.Exception
-
-
         """
-
-
     future_list=[]
     detaildata={}
 
@@ -179,7 +175,7 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
 def main():
     subsdir=r'E:\elan projects\L2\resubmission'
     dstdir=os.path.join(subsdir,r'passed')
-    #copypassedfiles(dstdir,subsdir)
+    copypassedfiles(dstdir,subsdir)
     import glob
     jsonflist=glob.glob(dstdir+'\\'+r'*.379.json')
     mem = Memory(cachedir=dstdir)
@@ -187,9 +183,3 @@ def main():
 
     c=json2agreementmatrix_cached(jsonflist)
     print c
-
-
-
-
-
-
