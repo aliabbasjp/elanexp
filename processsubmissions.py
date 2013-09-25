@@ -83,7 +83,7 @@ def csvdump(dic,fil):
     fil.close()
 
 
-def getagreement(tpl,datadir):
+def getagreement(tpl,datadir,task_type='all'):
     """Get agreement values for annotators in the :data:'tpl' list
 
     Args:
@@ -110,17 +110,21 @@ def getagreement(tpl,datadir):
         aname=stditem.split('.')[0][3:][-2:]
         annotators.add(aname)
         lecdict=readjson(stditem)
-        newlectask= create_task_data(lecdict,task_type='grouped',annotator=aname)
+        newlectask= create_task_data(lecdict,task_type=task_type,annotator=aname)
         label_data=json2taskdata.create_labels_list(newlectask)
         abscount=count_occurrances(str(label_data))
+        yaml.dump(abscount,open(os.path.join( datadir,'abscount-'+aname+'.yaml'),'w'))
+
         setcount=count_labels(newlectask)
+        yaml.dump(setcount,open(os.path.join( datadir,'setcount-'+aname+'.yaml'),'w'))
+
         lectask=lectask+newlectask
 
     task=AnnotationTask(data=lectask,distance=nltk.metrics.distance.masi_distance_mod)
 
     return  {frozenset(annotators): Agree(task.kappa(),task.alpha(),task.avg_Ao())}
 
-def json2agreementmatrix(jsonflist,start=2,maxlen=0):
+def json2agreementmatrix(jsonflist,start=2,maxlen=0,task_type='all'):
     """ Multi process function to convert 2 json file annotation combination to
     agreement values (alpha,kappa,Avg Observed agreement)
 
@@ -134,7 +138,8 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
            state (bool): Current state to be in.
 
         Returns:
-           A dict mapping annotator combination to agreement values then pickled.
+           A dict mapping annotator combination to agreement values then
+            pickled, yamled and csved.
 
         Raises:
            Future.Exception
@@ -152,7 +157,7 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
     with futures.ProcessPoolExecutor() as executor:
         for cnt in range(start,start+maxlen+1):
             for tpl in list(itertools.combinations(jsonflist,cnt)):
-                future_list.append(executor.submit(getagreement,tpl,os.path.dirname(jsonflist[0])))
+                future_list.append(executor.submit(getagreement,tpl,os.path.dirname(jsonflist[0]),task_type))
 
 
         for future in futures.as_completed(future_list):
@@ -164,7 +169,6 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
                 detaildata.update( future.result())
 
 
-    cPickle.dump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.picl','w'))
     yaml.dump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.yaml','w'))
     csvdump(detaildata,open(os.path.dirname(jsonflist[0])+'\\'+str(start)+'-'+str(start+maxlen)+'out.csv','w'))
     print "Dumped output"
@@ -173,13 +177,15 @@ def json2agreementmatrix(jsonflist,start=2,maxlen=0):
 
 @begin.start
 def main():
-    subsdir=r'E:\elan projects\L2\resubmission'
-    dstdir=os.path.join(subsdir,r'passed')
-    copypassedfiles(dstdir,subsdir)
+##    subsdir=r'E:\elan projects\L2\submissions\extracted'
+##    dstdir=os.path.join(subsdir,r'passed')
+##    copypassedfiles(dstdir,subsdir)
+    dstdir=r'E:\elan projects\L2\resubmission\full'
     import glob
     jsonflist=glob.glob(dstdir+'\\'+r'*.379.json')
+
     mem = Memory(cachedir=dstdir)
     json2agreementmatrix_cached=mem.cache(json2agreementmatrix)
 
-    c=json2agreementmatrix_cached(jsonflist)
+    c=json2agreementmatrix_cached(jsonflist,task_type='all')
     print c
